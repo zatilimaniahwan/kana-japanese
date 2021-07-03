@@ -1,0 +1,374 @@
+{
+   "home": {
+     "welcome": "Welcome to KANA!",
+     "description": "A platform to learn",
+     "ortography": "Japanese Language",
+     "hiragana": "Hiragana",
+     "katakana": "Katakana",
+     "buttons": {
+       "more": "More information",
+       "register": "Register now!"
+     }
+   },
+   "feature": {
+     "title": "What is KANA?",
+     "subTitle": {
+       "intro": "Introduction",
+       "module": "Modules in KANA"
+     },
+     "description": "Japanese language writing system are among one of the unique and complex in the world. At first, there were only three main orthography writing in Japan which were kanji (漢字), hiragana (ひらがな) and katakana (カタカナ). However, with many influenced penetrates into Japan from the west especially Euro America, the alphabets or as usually known as romaji (ローマ字) are widely use in Japan. To date, modern Japanese language orthography can be categorized into four types which are: hiragana, katakana, kanji and romaji. The basic writing in Japanese language which is Hiragana and Katakana are called “KANA”. Let’s practice KANA together in this e-learning module!",
+     "modules": {
+       "greeting": "Greetings",
+       "number": "Numbers",
+       "exercise": "Exercises",
+       "extra": "Extra Practices"
+     }
+   },
+   "work": {
+    "title": "How to start?",
+    "steps": {
+      "firstStep": "Sign up and pay",
+      "secondStep": "Payment will be verified",
+      "lastStep": "Sign in and start learning"
+    }
+  },
+  "learning": {
+    "moduleNum": {
+      "title": "Numbers",
+      "contents": {
+        "numbers": "Numbers",
+        "romaji": "Romaji",
+        "kana": "Kana"
+      }
+    },
+    "moduleFirst": {
+      "title": "Practice Unit 1",
+      "instruction": "Listen to the story and fill in the blanks with the correct answers (refer to the image)",
+      "buttonDownload": "Download sheet",
+      "button": "View answer",
+      "modalInstruction": "Hover on the image to enlarge it"
+    },
+    "moduleTwo": {
+      "title": "Practice Unit 2",
+      "instruction": "Listen to the story and fill in the blanks with the correct answers (refer to the image)",
+      "button": "View answer",
+      "modalInstruction": "Hover on the image to enlarge it"
+    },
+    "writingModule": {
+      "title": "Nouns",
+      "instruction": "Please fill in the blanks with KANA letter or alphabet",
+      "building": {
+        "title": "Building",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Bank",
+          "q2": "Train station",
+          "q3": "Post office",
+          "q4": "Shopping mall",
+          "q5": "School",
+          "q6": "University",
+          "q7": "Library",
+          "q8": "Art gallery",
+          "q9": "Restaurant",
+          "q10": "Supermarket"
+        }
+      },
+      "object": {
+        "title": "Things",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Pencil",
+          "q2": "Cap",
+          "q3": "Handphone",
+          "q4": "Cigarette",
+          "q5": "Note Book",
+          "q6": "Bag",
+          "q7": "T-shirt",
+          "q8": "Textbook",
+          "q9": "Laptop",
+          "q10": "Socks",
+          "q11": "Spectacles",
+          "q12": "Book shelf",
+          "q13": "Piano"
+        }
+      },
+      "fruit": {
+        "title": "Fruits",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Mandarin orange",
+          "q2": "Watermelon",
+          "q3": "Orange",
+          "q4": "Peach",
+          "q5": "Strawberry",
+          "q6": "Banana",
+          "q7": "Grape"
+        }
+      },
+      "body": {
+        "title": "Body Parts",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Eye",
+          "q2": "Nose",
+          "q3": "Foot",
+          "q4": "Ear",
+          "q5": "Mouth",
+          "q6": "Hair",
+          "q7": "Hand",
+          "q8": "Face",
+          "q9": "Head"
+        }
+      },
+      "direction": {
+        "title": "Direction",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Left",
+          "q2": "Right",
+          "q3": "Up",
+          "q4": "Down",
+          "q5": "In Front Of",
+          "q6": "Back",
+          "q7": "In",
+          "q8": "Next to",
+          "q9": "East",
+          "q10": "West",
+          "q11": "North",
+          "q12": "South"
+        }
+      }
+    },
+    "writingModule1": {
+      "title": "Adjectives",
+      "instruction": "Please fill in the blanks with KANA letter or alphabet",
+      "colour": {
+        "title": "Colours",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Yellow",
+          "q2": "Green",
+          "q3": "Blue",
+          "q4": "Red",
+          "q5": "Black",
+          "q6": "Violet",
+          "q7": "Pink",
+          "q8": "White",
+          "q9": "Grey"
+        }
+      },
+      "feeling": {
+        "title": "Feelings",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Happy",
+          "q2": "Like",
+          "q3": "Dislike",
+          "q4": "Delicious",
+          "q5": "Interesting",
+          "q6": "Good",
+          "q7": "Worry",
+          "q8": "Difficult"
+        }
+      }
+    },
+    "writingModule2": {
+      "title": "Verbs",
+      "instruction": "Please fill in the blanks with KANA letter or alphabet",
+      "verb": {
+        "title": "Verbs",
+        "button": "Check answer",
+        "contents": {
+          "q1": "Study",
+          "q2": "Go",
+          "q3": "Come",
+          "q4": "Go Back",
+          "q5": "Take a walk",
+          "q6": "Buy",
+          "q7": "Eat",
+          "q8": "Drink",
+          "q9": "Work",
+          "q10": "Travel",
+          "q11": "Listen",
+          "q12": "See",
+          "q13": "Write",
+          "q14": "Read",
+          "q15": "Play",
+          "q16": "Live"
+        }
+      }
+    },
+    "extraVocab": {
+      "title": "Extra Vocabularies",
+      "instruction": "Please hover on the image to view the romaji",
+      "market": "Market",
+      "food": "Food",
+      "colour": "Colours"
+    },
+    "tips": {
+      "chouOn": {
+        "title": "Chou-On",
+        "introduction": "The lengthening of vowel pronunciation of /a,i,u,e,o/ or Chou-on is widely used in Japanese language. The pronunciation will be lengthened one tempo longer.",
+        "contents": {
+          "obasan": "auntie",
+          "obaasan": "grandmother",
+          "okaasan": "mother",
+          "oniisan": "brother",
+          "senshuu": "last week",
+          "oneesan": "sister"
+        },
+        "subTitle": "Vowel"
+      },
+      "youOn": {
+        "title": "You-On",
+        "introduction": "The letters /ya, yu, yo/ are written in smaller size on the bottom right.",
+        "introduction1": "You-on letters must be written in smaller size because the size of these letters can affect the pronunciation and also the meaning.",
+        "contents": {
+          "ryuu": "dragon",
+          "riyuu": "reason"
+        }
+      },
+      "sokuOn": {
+        "title": "Soku-On",
+        "introduction": "Ensure that the letter /tsu/ is written in small size because its size and presence will bring different meaning to the word.",
+        "tsu": {
+          "small": "(/tsu/small)",
+          "big": "(/tsu/big)",
+          "none": "(none/tsu/)"
+        },
+        "contents": {
+          "hakka": "ignite",
+          "hatsuka": "20th",
+          "haka": "grave"
+        }
+      },
+      "hatsuOn": {
+        "title": "Hatsu-On [ん/N]",
+        "m": {
+          "description": "when it is in front of",
+          "ampan": "japanese snacks",
+          "shimbun": "newspaper",
+          "samma": "a type of fish"
+        },
+        "ng": {
+          "description": "when it is in front of",
+          "kongkai": "this time",
+          "anggai": "unexpected",
+          "ringgo": "apple"
+        },
+        "n": {
+          "description": "when it is in front of",
+          "anshin":"safe/relief etc",
+          "kantan": "easy",
+          "sensei": "teacher"
+        },
+        "ha": {
+          "title": "[は/ha] and [は/wa]",
+          "description": "to spell words that have the 'ha'sound",
+          "haru": "spring",
+          "hako": "box"
+        },
+        "wa": {
+          "description": "as grammar particle (ex: subject)",
+          "text": "Hashim is a good student"
+        },
+        "he": {
+          "title": "[へ/he] and [へ/e]",
+          "description": "to spell words that have 'he' sound",
+          "hei": "brick wall"
+        },
+        "e": {
+          "description": "as grammar particle (ex: verb)",
+          "text": "I go to the park"
+        },
+        "o": {
+          "title": "[お/o] and [を/o]",
+          "okane": "money",
+          "onaka": "stomach",
+          "description": "to spell words that have the 'o' sound",
+          "description2": "as grammar particle (ex: verb)",
+          "text": "I eat an apple"
+        },
+        "desuMasu": {
+          "title": "[です/desu] and [ます/masu]",
+          "description": "[です/desu] and [ます/masu] are used at the end of sentences; however, the pronunciation of 'u' is deleted and becomes 'des' and 'mas'.",
+          "text": "My name is Kana. Now, I live in Malaysia"
+        }
+      }
+    },
+    "greetings": {
+      "partOne": {
+        "title": "Part 1",
+        "ohayo": "Good morning",
+        "konnichiwa": "Good afternoon",
+        "konbanwa": "Good evening",
+        "oyasuminasai": "Good night"
+      },
+      "partTwo": {
+        "title": "Part 2",
+        "description": "I am really sorry",
+        "description1": "(Highest degree of politeness)",
+        "sumimasen": "I am sorry / Excuse me",
+        "gomennasai": "Sorry"
+      },
+      "partThree": {
+        "title": "Part 3",
+        "arigatou": "Thank you",
+        "douitashimashite": "You’re welcome",
+        "itadakimasu": "Expression before eating",
+        "gochisousamadeshita": "Expression after eating"
+      },
+      "partFour": {
+        "title": "Part 4",
+        "itterasshai": "an utterance use to reply ‘ittekimasu’ greeting",
+        "ittekimasu": "Utterance before going out",
+        "hajimemashite": "Uttered during the first meeting with someone",
+        "douzo": "Uttered at the end of a self introduction"
+      }
+    },
+    "malaysia": {
+      "title1": "States",
+      "title2": "Objects/Places/Foods",
+      "desc": "Come to Malaysia!",
+      "image1": "Spinning top",
+      "image_desc": "This word is written in Hiragana as Japan also has a similiar playing tool",
+      "image2": "Dim sum",
+      "image3": "Batik",
+      "image4": "Malay Traditional Dance",
+      "image5": "Night Market",
+      "image6": "Dodol",
+      "image7": "Wantan",
+      "image8": "Shrimp paste",
+      "image9" : "Nasi Kerabu",
+      "image10": "Ketupat",
+      "image11": "Otak-otak",
+      "image12": "Satay"
+    }
+  },
+  "appMenu": {
+    "language": {
+      "main": "Change Language",
+      "english": "English",
+      "malay": "Malay"
+    },
+    "kana": {
+      "main": "Kana Modules",
+      "number": "Numbers",
+      "greeting": "Greetings",
+      "extra":{
+        "main": "Extra Practices",
+        "submenu1": "Listening",
+        "submenu2": "Pronounciation",
+        "submenu3": "Extra Vocabulary",
+        "nouns": "Nouns",
+        "adjectives": "Adjectives",
+        "verbs": "Verbs"
+      },
+      "tips": "Tips"
+    },
+    "management": "Management",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "myAccount": "My Account"
+  }
+}

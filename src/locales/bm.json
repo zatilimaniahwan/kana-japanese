@@ -1,0 +1,128 @@
+{
+  "home": {
+    "welcome": "Welcome to KANA!",
+    "description": "A platform to learn",
+    "ortography": "Japanese Language",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "buttons": {
+      "more": "More information",
+      "register": "Register now!"
+    }
+  },
+  "feature": {
+    "title": "What is KANA?",
+    "subTitle": {
+      "intro": "Introduction",
+      "module": "Modules in KANA"
+    },
+    "description": "Sistem penulisan bahasa Jepun merupakan antara yang paling unik dan kompleks di dunia. Pada mulanya terdapat tiga jenis ortografi (tulisan) utama iaitu kanji (漢字), hiragana (ひらがな), dan katakana (カタカナ). Namun, setelah banyak pengaruh yang menyisip masuk ke dalam Jepun dari Barat khususnya dari negara Euro Amerika, alfabet Roman atau lebih dikenali sebagai romaji (ローマ字) telah digunakan secara meluas di negara Jepun. Pada hari ini, ortografi moden bahasa Jepun boleh dikategorikan ke dalam empat jenis iaitu hiragana, katakana, kanji dan romaji. Huruf asas di dalam bahasa Jepun iaitu hiragana dan katakana dipanggil “KANA”. Jom kita praktis KANA bersama-sama di dalam modul e-pembelajaran ini!",
+    "modules": {
+      "greeting": "Greetings",
+      "number": "Numbers",
+      "exercise": "Exercises",
+      "extra": "Extra Practices"
+    }
+  },
+  "work": {
+   "title": "How to start?",
+   "steps": {
+     "firstStep": "Sign up and pay",
+     "secondStep": "Payment will be verified",
+     "lastStep": "Sign in and start learning"
+   }
+ },
+ "learning": {
+   "moduleNum": {
+     "title": "Numbers",
+     "contents": {
+       "numbers": "Numbers",
+       "romaji": "Romaji",
+       "kana": "Kana"
+     }
+   },
+   "moduleFirst": {
+     "title": "Practice Unit 1",
+     "instruction": "Please click the button to view the answer",
+     "button": "View answer",
+     "modalInstruction": "Hover on the image to enlarge it"
+   },
+   "moduleTwo": {
+     "title": "Practice Unit 2",
+     "instruction": "Please click the button to view the answer",
+     "button": "View answer",
+     "modalInstruction": "Hover on the image to enlarge it"
+   },
+   "writingModule": {
+     "title": "Writing/ Pronunciation",
+     "instruction": "Please fill in the blanks with Kana letter or alphabet",
+     "building": {
+       "title": "Building",
+       "button": "Check answer",
+       "contents": {
+         "q1": "Bank",
+         "q2": "Train station",
+         "q3": "Post office",
+         "q4": "Shopping mall",
+         "q5": "School",
+         "q6": "University",
+         "q7": "Library",
+         "q8": "Art gallery",
+         "q9": "Restaurant",
+         "q10": "Supermarket"
+       }
+     },
+     "object": {
+       "title": "Things",
+       "button": "Check answer",
+       "contents": {
+         "q1": "Pencil",
+         "q2": "Cap",
+         "q3": "Handphone",
+         "q4": "Cigarette",
+         "q5": "Note Book",
+         "q6": "Bag",
+         "q7": "T-shirt",
+         "q8": "Textbook",
+         "q9": "Laptop",
+         "q10": "Socks",
+         "q11": "Spectacles",
+         "q12": "Book shelf",
+         "q13": "Piano"
+       }
+     },
+     "fruit": {
+       "title": "Fruits",
+       "button": "Check answer",
+       "contents": {
+         "q1": "Mandarin orange",
+         "q2": "Watermelon",
+         "q3": "Orange",
+         "q4": "Peach",
+         "q5": "Strawberry",
+         "q6": "Banana",
+         "q7": "Grape"
+       }
+     },
+     "body": {
+       "title": "Body Parts",
+       "button": "Check answer",
+       "contents": {
+         "q1": "Eye",
+         "q2": "Cap",
+         "q3": "Handphone",
+         "q4": "Cigarette",
+         "q5": "Note Book",
+         "q6": "Bag",
+         "q7": "T-shirt",
+         "q8": "Textbook",
+         "q9": "Laptop",
+         "q10": "Socks",
+         "q11": "Spectacles",
+         "q12": "Book shelf",
+         "q13": "Piano"
+       }
+     }
+   }
+ }
+}
