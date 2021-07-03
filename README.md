@@ -5,9 +5,7 @@
 npm install
 ```
 
-You may have trouble with `grpc` during setup - if so, downgrade to an older version of Node (10.21.0 is known to work for Mac)
-
-### Compiles and hot-reloads for development (Windows)
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
