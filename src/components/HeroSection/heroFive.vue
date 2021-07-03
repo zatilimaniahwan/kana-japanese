@@ -1,31 +1,42 @@
 <template>
-  <section
-    id="home"
-    class="section welcome-area  d-flex align-items-center"
-  >
+  <section id="home" class="section welcome-area d-flex align-items-center">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <!-- Welcome Intro Start -->
         <div class="col-12 col-lg-12">
           <div class="welcome-intro">
-            <h1 style="color:#7c4fe0;">
-              {{ $t('home.welcome') }}
+            <h1 class="hero">
+              {{ $t("home.welcome") }}
             </h1>
-             <vue-typed-js :strings="[ $t('home.ortography') , $t('home.hiragana'), $t('home.katakana')]" :loop="true" :typeSpeed="100">
-            <h4 class="text-white my-4">
-              {{ $t('home.description')}} <span class="typing"></span>
+            <h4 class="text-white my-4"> {{ $t('home.description')}}
+            <span>
+            <vue-typer
+              :text="[
+                $t('home.ortography'),
+                $t('home.hiragana'),
+                $t('home.katakana'),
+              ]"
+              :repeat="Infinity"
+              :shuffle="false"
+              initial-action="typing"
+              :pre-type-delay="70"
+              :type-delay="70"
+              :pre-erase-delay="2000"
+              :erase-delay="250"
+              erase-style="clear"
+              :erase-on-complete="false"
+              caret-animation="blink"
+            ></vue-typer>
+            </span>
             </h4>
-             </vue-typed-js>
             <!-- Store Buttons -->
             <div class="button-group store-buttons d-flex">
-              <a
-                href="#features"
-                class="btn sApp-btn text-uppercase scroll"
-              > {{ $t('home.buttons.more') }}</a>
-              <a
-                href="#"
-                class="btn sApp-btn-primary text-uppercase"
-              >{{ $t('home.buttons.register') }}</a>
+              <a href="#features" class="btn sApp-btn text-uppercase scroll">
+                {{ $t("home.buttons.more") }}</a
+              >
+              <a href="#" class="btn sApp-btn-primary text-uppercase">{{
+                $t("home.buttons.register")
+              }}</a>
             </div>
           </div>
         </div>
@@ -47,9 +58,11 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-
+<style>
+.hero {
+  color: #7c4fe0;
 }
-</script>
+.vue-typer .custom.char.typed {
+  color: #7c4fe0;
+}
+</style>

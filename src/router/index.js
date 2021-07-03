@@ -16,6 +16,7 @@ import ExtraVocab from '@/components/Modules/extraPractices/extravocab/Extra'
 import Tips from '@/components/Modules/Tips/Tips'
 import Greeting from '@/components/Modules/Greetings/Greeting'
 import Malaysia from '@/components/Modules/Malaysia/Malaysia'
+
 Vue.use(Router)
 
 export default new Router({

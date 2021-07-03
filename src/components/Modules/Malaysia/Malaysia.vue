@@ -20,6 +20,7 @@ import InnerBreadcrumb from '../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import FooterSection from '../../FooterSection/footerFour'
 import State from './parts/State'
 import PartTwo from './parts/partTwo'
+
 export default {
   name: 'Malaysia',
   components: {

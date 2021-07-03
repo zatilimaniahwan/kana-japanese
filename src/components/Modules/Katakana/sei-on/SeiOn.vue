@@ -36,6 +36,7 @@ import MaMo from './parts/maMo'
 import YaYo from './parts/yaYo'
 import RaRo from './parts/raRo'
 import WaOn from './parts/WaOn'
+
 export default {
   name: 'Malaysia',
   components: {

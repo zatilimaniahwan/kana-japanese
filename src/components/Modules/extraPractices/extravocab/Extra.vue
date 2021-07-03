@@ -28,6 +28,7 @@ import FooterSection from '../../../FooterSection/footerFour'
 import Market from './Market'
 import Colour from './Colour'
 import Food from './Food'
+
 export default {
   name: 'Adjectives',
   components: {

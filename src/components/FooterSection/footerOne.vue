@@ -184,13 +184,14 @@
 
 <script>
 import dayjs from 'dayjs'
+
 export default {
-    name: 'FooterOne',
-    computed: {
+  name: 'FooterOne',
+  computed: {
     year () {
       return dayjs().year()
     }
-    }
+  }
 }
 </script>
 

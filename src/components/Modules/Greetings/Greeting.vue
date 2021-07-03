@@ -32,6 +32,7 @@ import PartOne from './parts/partOne'
 import PartTwo from './parts/partTwo'
 import PartThree from './parts/partThree'
 import PartFour from './parts/partFour'
+
 export default {
   name: 'Greeting',
   components: {
