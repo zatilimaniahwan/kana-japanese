@@ -25,5 +25,14 @@ npm run test
 npm run lint
 ```
 
+### docker build
+```
+docker build -t kana-japanese .
+```
+ ### docker run
+ ```
+ docker run -it -p 8080:8080 kana-japanese
+ ```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
