@@ -5,7 +5,7 @@
         <div class="alert alert-info" role="alert">
           <p>{{ $t("learning.moduleTwo.instruction") }}</p>
         </div>
-        <b-button class="bg-primary" v-b-modal.modal-1>{{
+        <b-button class="bg-primary" v-b-modal.modal-unitTwo>{{
           $t("learning.moduleTwo.button")
         }}</b-button>
        <b-row>
@@ -32,26 +32,23 @@
             />
           </b-col>
         </b-row>
-        <b-modal
-          id="modal-1"
-          :hide-footer=true
-          :title="$t('learning.moduleTwo.modalInstruction')"
-        >
-          <div class="answer">
+        <modal :modalId="'modal-unitTwo'" :modalTitle="$t('learning.moduleFirst.modalInstruction')" >
+          <div class="answer" slot="content">
             <img
               alt="Responsive image"
               src="/assets/img/unit/05.png"
               width="100%"
             />
           </div>
-        </b-modal>
+        </modal>
       </div>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../Modal/Modal'
 export default {
-  name: 'Section'
+  components: { Modal }
 }
 </script>
 
