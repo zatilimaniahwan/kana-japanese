@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+              <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
             <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal class="syllable" :modalId="'modal-syllable-raro'">
+        <div slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'RaRo',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -42,10 +57,31 @@ export default {
           original: 'ろ',
           romaji: 'ro'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
+    showModal (val) {
+      switch (val) {
+      case 'ら':
+        this.imgSrc = '/assets/gif/hiraRa-Ro/ra-min.gif'
+        break
+      case 'り':
+        this.imgSrc = '/assets/gif/hiraRa-Ro/ri-min.gif'
+        break
+      case 'る':
+        this.imgSrc = '/assets/gif/hiraRa-Ro/ru-min.gif'
+        break
+      case 'れ':
+        this.imgSrc = '/assets/gif/hiraRa-Ro/re-min.gif'
+        break
+      case 'ろ':
+        this.imgSrc = '/assets/gif/hiraRa-Ro/ro-min.gif'
+        break
+      }
+      this.$bvModal.show('modal-syllable-raro')
+    },
     play (val) {
       let soundSrc
       switch (val) {
