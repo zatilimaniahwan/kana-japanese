@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+            <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
               <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal class="syllable" :modalId="'modal-syllable-nano'">
+        <div slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'NaNo',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -42,10 +57,31 @@ export default {
           original: 'の',
           romaji: 'no'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
+    showModal (val) {
+      switch (val) {
+      case 'な':
+        this.imgSrc = '/assets/gif/hiraNa-No/na-min.gif'
+        break
+      case 'に':
+        this.imgSrc = '/assets/gif/hiraNa-No/ni-min.gif'
+        break
+      case 'ぬ':
+        this.imgSrc = '/assets/gif/hiraNa-No/nu-min.gif'
+        break
+      case 'ね':
+        this.imgSrc = '/assets/gif/hiraNa-No/ne-min.gif'
+        break
+      case 'の':
+        this.imgSrc = '/assets/gif/hiraNa-No/no-min.gif'
+        break
+      }
+      this.$bvModal.show('modal-syllable-nano')
+    },
     play (val) {
       switch (val) {
       case 'な':

@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+               <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
               <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal class="syllable" :modalId="'modal-syllable-tato'">
+        <div slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'TaTo',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -42,10 +57,31 @@ export default {
           original: 'と',
           romaji: 'to'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
+    showModal (val) {
+      switch (val) {
+      case 'た':
+        this.imgSrc = '/assets/gif/hiraTa-To/ta-min.gif'
+        break
+      case 'ち':
+        this.imgSrc = '/assets/gif/hiraTa-To/chi-min.gif'
+        break
+      case 'つ':
+        this.imgSrc = '/assets/gif/hiraTa-To/tsu-min.gif'
+        break
+      case 'て':
+        this.imgSrc = '/assets/gif/hiraTa-To/te-min.gif'
+        break
+      case 'と':
+        this.imgSrc = '/assets/gif/hiraTa-To/to-min.gif'
+        break
+      }
+      this.$bvModal.show('modal-syllable-tato')
+    },
     play (val) {
       switch (val) {
       case 'た':
