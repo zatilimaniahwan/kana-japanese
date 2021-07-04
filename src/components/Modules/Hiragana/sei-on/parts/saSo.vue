@@ -83,24 +83,25 @@ export default {
       this.$bvModal.show('modal-syllable-saso')
     },
     play (val) {
+      let soundSrc
       switch (val) {
       case 'さ':
-        this.soundSrc = '/assets/sounds/sei-on/11.mp3'
+        soundSrc = '/assets/sounds/sei-on/11.mp3'
         break
       case 'し':
-        this.soundSrc = '/assets/sounds/sei-on/12.mp3'
+        soundSrc = '/assets/sounds/sei-on/12.mp3'
         break
       case 'す':
-        this.soundSrc = '/assets/sounds/sei-on/13.mp3'
+        soundSrc = '/assets/sounds/sei-on/13.mp3'
         break
       case 'せ':
-        this.soundSrc = '/assets/sounds/sei-on/14.mp3'
+        soundSrc = '/assets/sounds/sei-on/14.mp3'
         break
       case 'そ':
-        this.soundSrc = '/assets/sounds/sei-on/15.mp3'
+        soundSrc = '/assets/sounds/sei-on/15.mp3'
         break
       }
-      const audio = new Audio(this.soundSrc)
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }

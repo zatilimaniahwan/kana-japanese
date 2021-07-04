@@ -83,24 +83,25 @@ export default {
       this.$bvModal.show('modal-syllable-nano')
     },
     play (val) {
+      let soundSrc
       switch (val) {
       case 'な':
-        this.soundSrc = '/assets/sounds/sei-on/21.mp3'
+        soundSrc = '/assets/sounds/sei-on/21.mp3'
         break
       case 'に':
-        this.soundSrc = '/assets/sounds/sei-on/22.mp3'
+        soundSrc = '/assets/sounds/sei-on/22.mp3'
         break
       case 'ぬ':
-        this.soundSrc = '/assets/sounds/sei-on/23.mp3'
+        soundSrc = '/assets/sounds/sei-on/23.mp3'
         break
       case 'ね':
-        this.soundSrc = '/assets/sounds/sei-on/24.mp3'
+        soundSrc = '/assets/sounds/sei-on/24.mp3'
         break
       case 'の':
-        this.soundSrc = '/assets/sounds/sei-on/25.mp3'
+        soundSrc = '/assets/sounds/sei-on/25.mp3'
         break
       }
-      const audio = new Audio(this.soundSrc)
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }

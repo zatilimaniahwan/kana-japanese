@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+            <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
             <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal class="syllable" :modalId="'modal-syllable-haho'">
+        <div slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'HaHo',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -42,29 +57,51 @@ export default {
           original: 'ほ',
           romaji: 'ho'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
-    play (val) {
+    showModal (val) {
       switch (val) {
       case 'は':
-        this.soundSrc = '/assets/sounds/sei-on/26.mp3'
+        this.imgSrc = '/assets/gif/hiraHa-Ho/ha-min.gif'
         break
       case 'ひ':
-        this.soundSrc = '/assets/sounds/sei-on/27.mp3'
+        this.imgSrc = '/assets/gif/hiraHa-Ho/hi-min.gif'
         break
       case 'ふ':
-        this.soundSrc = '/assets/sounds/sei-on/28.mp3'
+        this.imgSrc = '/assets/gif/hiraHa-Ho/fu-min.gif'
         break
       case 'へ':
-        this.soundSrc = '/assets/sounds/sei-on/29.mp3'
+        this.imgSrc = '/assets/gif/hiraHa-Ho/he-min.gif'
         break
       case 'ほ':
-        this.soundSrc = '/assets/sounds/sei-on/30.mp3'
+        this.imgSrc = '/assets/gif/hiraHa-Ho/ho-min.gif'
         break
       }
-      const audio = new Audio(this.soundSrc)
+      this.$bvModal.show('modal-syllable-haho')
+    },
+    play (val) {
+      let soundSrc
+      switch (val) {
+      case 'は':
+        soundSrc = '/assets/sounds/sei-on/26.mp3'
+        break
+      case 'ひ':
+        soundSrc = '/assets/sounds/sei-on/27.mp3'
+        break
+      case 'ふ':
+        soundSrc = '/assets/sounds/sei-on/28.mp3'
+        break
+      case 'へ':
+        soundSrc = '/assets/sounds/sei-on/29.mp3'
+        break
+      case 'ほ':
+        soundSrc = '/assets/sounds/sei-on/30.mp3'
+        break
+      }
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }
