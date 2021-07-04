@@ -50,11 +50,6 @@
     </div>
   </section>
 </template>
-<script>
-export default {
-  name: 'partOne'
-}
-</script>
 <style scoped>
 .partOne {
     background: url('/assets/img/greetings/Asset 1.png');

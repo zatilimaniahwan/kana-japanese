@@ -16,7 +16,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part4/Asset 9.png"
-            width="80%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3">
@@ -24,7 +24,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part4/Asset 10.png"
-            width="80%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3" style="margin-top:80px;">
@@ -60,8 +60,3 @@
     </div>
   </section>
 </template>
-<script>
-export default {
-  name: 'partFour'
-}
-</script>

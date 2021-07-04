@@ -7,7 +7,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part2/Asset 2.png"
-            width="100%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3" style="margin-top:80px;">
@@ -25,7 +25,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part2/Asset 1.png"
-            width="80%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3" style="margin-top:80px;">
@@ -44,7 +44,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part2/Asset 4.png"
-            width="80%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3" style="margin-top:80px;">
@@ -61,7 +61,7 @@
             class="img-fluid rounded mx-auto d-block mt-4"
             alt="Responsive image"
             src="/assets/img/greetings/part2/Asset 3.png"
-            width="80%"
+            width="70%"
           />
             </b-col>
             <b-col cols="3" style="margin-top:80px;">
@@ -77,8 +77,3 @@
     </div>
   </section>
 </template>
-<script>
-export default {
-  name: 'partTwo'
-}
-</script>
