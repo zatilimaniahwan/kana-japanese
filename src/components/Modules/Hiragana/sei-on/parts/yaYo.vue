@@ -39,18 +39,19 @@ export default {
   },
   methods: {
     play (val) {
+      let soundSrc
       switch (val) {
       case 'や':
-        this.soundSrc = '/assets/sounds/sei-on/36.mp3'
+        soundSrc = '/assets/sounds/sei-on/36.mp3'
         break
       case 'ゆ':
-        this.soundSrc = '/assets/sounds/sei-on/37.mp3'
+        soundSrc = '/assets/sounds/sei-on/37.mp3'
         break
       case 'よ':
-        this.soundSrc = '/assets/sounds/sei-on/38.mp3'
+        soundSrc = '/assets/sounds/sei-on/38.mp3'
         break
       }
-      const audio = new Audio(this.soundSrc)
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }
