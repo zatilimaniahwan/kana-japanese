@@ -13,7 +13,7 @@
           </b-card>
         </b-col>
       </b-row>
-      <modal :modalId="'modal-syllable'">
+      <modal :modalId="'modal-syllable-ao'">
         <div class="syllable" slot="content">
            <img
               class="img-fluid"
@@ -76,7 +76,7 @@ export default {
         this.imgSrc = '/assets/gif/hiraA-O/o-min.gif'
         break
       }
-      this.$bvModal.show('modal-syllable')
+      this.$bvModal.show('modal-syllable-ao')
     },
     play (val) {
       switch (val) {
