@@ -78,8 +78,20 @@ export const SYLLABLES = {
       {
         original: 'き',
         romaji: 'ki',
-        imgSrc: '/assets/gif/hiraKa-Ko/ka-min.gif',
-        soundSrc: '/assets/sounds/sei-on/6.mp3'
+        imgSrc: '/assets/gif/hiraKa-Ko/ki-min.gif',
+        soundSrc: '/assets/sounds/sei-on/7.mp3'
+      },
+      {
+        original: 'く',
+        romaji: 'ku',
+        imgSrc: '/assets/gif/hiraKa-Ko/ku-min.gif',
+        soundSrc: '/assets/sounds/sei-on/8.mp3'
+      },
+      {
+        original: 'け',
+        romaji: 'ke',
+        imgSrc: '/assets/gif/hiraKa-Ko/ke-min.gif',
+        soundSrc: '/assets/sounds/sei-on/8.mp3'
       }
     ]
   }
