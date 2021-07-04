@@ -47,24 +47,25 @@ export default {
   },
   methods: {
     play (val) {
+      let soundSrc
       switch (val) {
       case 'ら':
-        this.soundSrc = '/assets/sounds/sei-on/39.mp3'
+        soundSrc = '/assets/sounds/sei-on/39.mp3'
         break
       case 'り':
-        this.soundSrc = '/assets/sounds/sei-on/40.mp3'
+        soundSrc = '/assets/sounds/sei-on/40.mp3'
         break
       case 'る':
-        this.soundSrc = '/assets/sounds/sei-on/41.mp3'
+        soundSrc = '/assets/sounds/sei-on/41.mp3'
         break
       case 'れ':
-        this.soundSrc = '/assets/sounds/sei-on/42.mp3'
+        soundSrc = '/assets/sounds/sei-on/42.mp3'
         break
       case 'ろ':
-        this.soundSrc = '/assets/sounds/sei-on/43.mp3'
+        soundSrc = '/assets/sounds/sei-on/43.mp3'
         break
       }
-      const audio = new Audio(this.soundSrc)
+      const audio = new Audio(soundSrc)
       audio.play()
     }
   }
