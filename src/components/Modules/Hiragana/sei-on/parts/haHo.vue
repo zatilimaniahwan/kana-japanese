@@ -6,7 +6,7 @@
           <b-card>
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
-             <h5 class="mt-2"> {{ syllable.romaji }}</h5>
+             <h5 class="mt-2 romaji"> {{ syllable.romaji }}</h5>
             <b-button
                 class="bg-primary mt-3"
                 @click="showModal(syllable.original)"

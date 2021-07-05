@@ -62,3 +62,13 @@ export default {
   }
 }
 </script>
+<style>
+h3.syllable  {
+    font-size: 90px;
+    line-height: 1.2;
+}
+h5.romaji {
+    font-size: 30px;
+    line-height: 1.2;
+}
+</style>
