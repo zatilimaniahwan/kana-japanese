@@ -6,7 +6,7 @@
           <b-card>
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
-             <h5 class="mt-2"> {{ syllable.romaji }}</h5>
+             <h5 class="mt-2 romaji"> {{ syllable.romaji }}</h5>
              <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
              <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
