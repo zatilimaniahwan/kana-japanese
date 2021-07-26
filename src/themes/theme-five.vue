@@ -13,7 +13,7 @@
 import HeaderSection from '../components/HeaderSection/headerOne'
 import HeroSection from '../components/HeroSection/heroFive'
 import FeatureSection from '../components/FeatureSection/featureFive'
-import FooterSection from '../components/FooterSection/footerFour'
+import FooterSection from '../components/FooterSection/footerThree'
 
 export default {
   name: 'ThemeFive',
