@@ -43,30 +43,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                {{this.$t('appMenu.language.main')}}
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a class="dropdown-item" href="/hiragana/sei-on">{{this.$t('appMenu.language.english')}}</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/hiragana/sei-on">{{this.$t('appMenu.language.malay')}}</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                id="navbarDropdownMenuLink"
-                class="nav-link dropdown-toggle"
-                href="javascript:;"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                   {{this.$t('appMenu.kana.main')}}
+                {{ this.$t("appMenu.kana.main") }}
               </a>
               <ul
                 class="dropdown-menu"
@@ -137,101 +114,125 @@
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/number">{{this.$t('appMenu.kana.number')}}</a>
+                  <a class="dropdown-item" href="/number">{{
+                    this.$t("appMenu.kana.number")
+                  }}</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/greetings">{{this.$t('appMenu.kana.greeting')}}</a>
+                  <a class="dropdown-item" href="/greetings">{{
+                    this.$t("appMenu.kana.greeting")
+                  }}</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="/katakana-malaysia"
                     >Katakana (Malaysia)</a
                   >
                 </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="javascript:;"
-                    >{{this.$t('appMenu.kana.extra.main')}}</a
-                  >
-                  <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="javascript:;"
-                    >{{this.$t('appMenu.kana.extra.submenu1')}}</a >
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                      <li>
-                      <a class="dropdown-item" href="/unit-one"
-                        >Unit 1</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/unit-two"
-                        >Unit 2</a
-                      >
-                    </li>
-                      </ul>
-                    </li>
-                   <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="javascript:;"
-                    >{{this.$t('appMenu.kana.extra.submenu2')}}</a >
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                        <li>
-                          <a class="dropdown-item" href="/nouns"
-                            >{{this.$t('appMenu.kana.extra.nouns')}}</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="/adjectives"
-                            >{{this.$t('appMenu.kana.extra.adjectives')}}</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="/verbs"
-                            >{{this.$t('appMenu.kana.extra.verbs')}}</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/extravocab"
-                        >{{this.$t('appMenu.kana.extra.submenu3')}}</a
-                      >
-                    </li>
-                  </ul>
+                <li>
+                  <a class="dropdown-item" href="/extravocab">{{
+                    this.$t("appMenu.kana.extra.submenu3")
+                  }}</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/tips"
-                    >Tips</a
-                  >
+                  <a class="dropdown-item" href="/tips">Tips</a>
                 </li>
-                <!--<li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="javascript:;"
-                    >Accounts<span class="badge badge-pill badge-warning ml-2"
-                      >New</span
-                    ></a
-                  >
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="/login">Login</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/signup">Signup</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/forgot">Reset Password</a>
-                    </li>
-                  </ul>
-                </li>-->
               </ul>
             </li>
-           <li class="nav-item">
-              <a class="nav-link scroll" href="#screenshots">{{this.$t('appMenu.management')}}</a>
+            <li class="nav-item dropdown">
+              <a
+                id="navbarDropdownMenuLink"
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ this.$t("appMenu.kana.extra.main") }} ({{
+                  this.$t("appMenu.kana.extra.submenu1.main")
+                }})
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/unit-one">
+                    {{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/unit-two"
+                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    2</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/unit-two">{{
+                    this.$t("appMenu.kana.extra.submenu1.sub")
+                  }}</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#pricing">{{this.$t('appMenu.myAccount')}}</a>
+            <li class="nav-item dropdown">
+              <a
+                id="navbarDropdownMenuLink"
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ this.$t("appMenu.kana.extra.main") }} ({{
+                  this.$t("appMenu.kana.extra.submenu2")
+                }})
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/nouns">{{
+                    this.$t("appMenu.kana.extra.nouns")
+                  }}</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/adjectives">{{
+                    this.$t("appMenu.kana.extra.adjectives")
+                  }}</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/verbs">{{
+                    this.$t("appMenu.kana.extra.verbs")
+                  }}</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                id="navbarDropdownMenuLink"
+                class="nav-link dropdown-toggle"
+                href="javascript:;"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ this.$t("appMenu.language.main") }}
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/hiragana/sei-on">{{
+                    this.$t("appMenu.language.english")
+                  }}</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/hiragana/sei-on">{{
+                    this.$t("appMenu.language.malay")
+                  }}</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
