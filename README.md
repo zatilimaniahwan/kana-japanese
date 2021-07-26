@@ -1,6 +1,6 @@
 # kana-japanese
 
-<a href="https://kana-3aa6a.web.app">Website</a>
+<a href="https://kana-3aa6a.web.app" target="_blank">Website</a>
 
 ## Project setup
 ```
