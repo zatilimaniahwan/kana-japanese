@@ -1,5 +1,7 @@
 # kana-japanese
 
+<a href="https://kana-3aa6a.web.app">Website</a>
+
 ## Project setup
 ```
 npm install
