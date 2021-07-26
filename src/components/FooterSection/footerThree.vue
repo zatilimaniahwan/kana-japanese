@@ -107,19 +107,16 @@
               </h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">FAQ</a>
+                  <a href="#">{{ this.$t("appMenu.kana.extra.nouns") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Privacy Policy</a>
+                  <a href="#">{{ this.$t("appMenu.kana.extra.adjectives") }}</a>
                 </li>
                 <li class="py-2">
                   <a href="#">Support</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Terms &amp; Conditions</a>
-                </li>
-                <li class="py-2">
-                  <a href="#">Contact</a>
+                  <a href="#">{{ this.$t("appMenu.kana.extra.verbs") }}</a>
                 </li>
               </ul>
             </div>
