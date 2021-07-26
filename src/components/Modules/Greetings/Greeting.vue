@@ -27,7 +27,7 @@
 <script>
 import HeaderSection from '../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../InnerPages/InnerBreadcrumb/breadcrumbThree'
-import FooterSection from '../../FooterSection/footerFour'
+import FooterSection from '../../FooterSection/footerThree'
 import PartOne from './parts/partOne'
 import PartTwo from './parts/partTwo'
 import PartThree from './parts/partThree'

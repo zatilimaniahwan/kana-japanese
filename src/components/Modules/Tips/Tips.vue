@@ -31,7 +31,7 @@ import HaWa from './haWa'
 import HeE from './heE'
 import O from './O'
 import DesuMasu from './DesuMasu'
-import FooterSection from '../../FooterSection/footerFour'
+import FooterSection from '../../FooterSection/footerThree'
 
 export default {
   name: 'Tips',

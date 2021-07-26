@@ -16,7 +16,7 @@
 import HeaderSection from '../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import NumberSection from './NumberSection'
-import FooterSection from '../../FooterSection/footerFour'
+import FooterSection from '../../FooterSection/footerThree'
 
 export default {
   name: 'Number',

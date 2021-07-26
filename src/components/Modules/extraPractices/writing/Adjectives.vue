@@ -23,7 +23,7 @@ import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import Colour from './parts-adjectives/Colour'
 import Feeling from './parts-adjectives/Feeling'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 
 export default {
   name: 'Adjectives',

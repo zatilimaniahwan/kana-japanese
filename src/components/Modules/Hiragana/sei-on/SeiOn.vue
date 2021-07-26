@@ -25,7 +25,7 @@
 <script>
 import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 import AO from './parts/aO'
 import HaHo from './parts/haHo'
 import KaKo from './parts/kaKo'

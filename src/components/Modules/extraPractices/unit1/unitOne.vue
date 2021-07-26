@@ -18,7 +18,7 @@
 import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import Section from './section'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 
 export default {
   name: 'UnitOne',

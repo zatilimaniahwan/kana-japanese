@@ -29,7 +29,7 @@ import Things from './parts-nouns/Things'
 import Fruit from './parts-nouns/Fruit'
 import BodyParts from './parts-nouns/BodyParts'
 import Direction from './parts-nouns/Direction'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 
 export default {
   name: 'Nouns',

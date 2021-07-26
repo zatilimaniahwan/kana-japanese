@@ -24,7 +24,7 @@
 <script>
 import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 import Market from './Market'
 import Colour from './Colour'
 import Food from './Food'

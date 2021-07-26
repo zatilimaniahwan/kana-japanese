@@ -19,7 +19,7 @@
 import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import Verbs from './parts-verbs/Verb'
-import FooterSection from '../../../FooterSection/footerFour'
+import FooterSection from '../../../FooterSection/footerThree'
 
 export default {
   name: 'Adjectives',
