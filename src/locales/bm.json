@@ -25,104 +25,349 @@
     }
   },
   "work": {
-   "title": "Bagaimana untuk mula?",
-   "steps": {
-     "firstStep": "Daftar akaun baharu dan bayar",
-     "secondStep": "Pembayaran akan disahkan",
-     "lastStep": "Daftar masuk dan mula belajar!"
-   }
- },
- "learning": {
-   "moduleNum": {
-     "title": "Nombor",
-     "contents": {
-       "numbers": "Nombor",
-       "romaji": "Romaji",
-       "kana": "Kana"
-     }
-   },
-   "moduleFirst": {
-     "title": "Latihan Unit 1",
-     "instruction": "Sila tekan butang untuk melihat jawapan",
-     "button": "Lihat jawapan",
-     "modalInstruction": "Legar kursor di atas imej untuk besarkan"
-   },
-   "moduleTwo": {
-     "title": "Latihan Unit 2",
-     "instruction": "Sila tekan butang untuk melihat jawapan",
-     "button": "Lihat jawapan",
-     "modalInstruction": "Legar kursor di atas imej untuk besarkan"
-   },
-   "writingModule": {
-     "title": "Tulisan / Sebutan",
-     "instruction": "Isi tempat kosong menggunakan huruf Kana atau huruf rumi",
-     "building": {
-       "title": "Bangunan",
-       "button": "Semak jawapan",
-       "contents": {
-         "q1": "Bank",
-         "q2": "Stesen kereta api",
-         "q3": "Pejabat pos",
-         "q4": "Pusat membeli-belah",
-         "q5": "Sekolah",
-         "q6": "Universiti",
-         "q7": "Perpustakaan",
-         "q8": "Galeri seni",
-         "q9": "Kedai makan",
-         "q10": "Pasar raya"
-       }
-     },
-     "object": {
-       "title": "Benda",
-       "button": "Semak jawapan",
-       "contents": {
-         "q1": "Pensel",
-         "q2": "Topi",
-         "q3": "Telefon bimbit",
-         "q4": "Rokok",
-         "q5": "Buku nota",
-         "q6": "Beg",
-         "q7": "Kemeja T",
-         "q8": "Buku teks",
-         "q9": "Laptop",
-         "q10": "Stoking",
-         "q11": "Kaca mata",
-         "q12": "Rak buku",
-         "q13": "Piano"
-       }
-     },
-     "fruit": {
-       "title": "Buah-buahan",
-       "button": "Semak jawapan",
-       "contents": {
-         "q1": "Limau Mandarin",
-         "q2": "Tembikai",
-         "q3": "Oren",
-         "q4": "Pic",
-         "q5": "Strawberi",
-         "q6": "Pisang",
-         "q7": "Anggur"
-       }
-     },
-     "body": {
-       "title": "Bahagian-bahagian Badan",
-       "button": "Semak jawapan",
-       "contents": {
-         "q1": "Mata",
-         "q2": "Topi",
-         "q3": "Telefon bimbit",
-         "q4": "Rokok",
-         "q5": "Buku nota",
-         "q6": "Beg",
-         "q7": "Kemeja T",
-         "q8": "Buku teks",
-         "q9": "Laptop",
-         "q10": "Stoking",
-         "q11": "Kaca mata",
-         "q12": "Rak buku",
-         "q13": "Piano"
-       }
-     }
-   }
- }
+    "title": "Bagaimana untuk mula?",
+    "steps": {
+      "firstStep": "Daftar akaun baharu dan bayar",
+      "secondStep": "Pembayaran akan disahkan",
+      "lastStep": "Daftar masuk dan mula belajar!"
+    }
+  },
+  "learning": {
+    "moduleNum": {
+      "title": "Nombor",
+      "contents": {
+        "numbers": "Nombor",
+        "romaji": "Romaji",
+        "kana": "Kana"
+      }
+    },
+    "moduleFirst": {
+      "title": "Latihan Unit 1",
+      "instruction": "Sila tekan butang untuk melihat jawapan",
+      "button": "Lihat jawapan",
+      "modalInstruction": "Legar kursor di atas imej untuk besarkan"
+    },
+    "moduleTwo": {
+      "title": "Latihan Unit 2",
+      "instruction": "Sila tekan butang untuk melihat jawapan",
+      "button": "Lihat jawapan",
+      "modalInstruction": "Legar kursor di atas imej untuk besarkan"
+    },
+    "writingModule": {
+      "title": "Tulisan / Sebutan",
+      "instruction": "Isi tempat kosong menggunakan huruf Kana atau huruf rumi",
+      "building": {
+        "title": "Bangunan",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Bank",
+          "q2": "Stesen kereta api",
+          "q3": "Pejabat pos",
+          "q4": "Pusat membeli-belah",
+          "q5": "Sekolah",
+          "q6": "Universiti",
+          "q7": "Perpustakaan",
+          "q8": "Galeri seni",
+          "q9": "Kedai makan",
+          "q10": "Pasar raya"
+        }
+      },
+      "object": {
+        "title": "Benda",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Pensel",
+          "q2": "Topi",
+          "q3": "Telefon bimbit",
+          "q4": "Rokok",
+          "q5": "Buku nota",
+          "q6": "Beg",
+          "q7": "Kemeja T",
+          "q8": "Buku teks",
+          "q9": "Laptop",
+          "q10": "Stoking",
+          "q11": "Kaca mata",
+          "q12": "Rak buku",
+          "q13": "Piano"
+        }
+      },
+      "fruit": {
+        "title": "Buah-buahan",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Limau Mandarin",
+          "q2": "Tembikai",
+          "q3": "Oren",
+          "q4": "Pic",
+          "q5": "Strawberi",
+          "q6": "Pisang",
+          "q7": "Anggur"
+        }
+      },
+      "body": {
+        "title": "Bahagian-bahagian Badan",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Mata",
+          "q2": "Hidung",
+          "q3": "Kaki",
+          "q4": "Telinga",
+          "q5": "Mulut",
+          "q6": "Rambut",
+          "q7": "Tangan",
+          "q8": "Muka",
+          "q9": "Kepala"
+        }
+      },
+      "direction": {
+        "title": "Arah",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Kiri",
+          "q2": "Kanan",
+          "q3": "Atas",
+          "q4": "Bawah",
+          "q5": "Hadapan",
+          "q6": "Belakang",
+          "q7": "Dalam",
+          "q8": "Bersebelahan",
+          "q9": "Timur",
+          "q10": "Barat",
+          "q11": "Utara",
+          "q12": "Selatan"
+        }
+      }
+    },
+    "writingModule1": {
+      "title": "Adjektif",
+      "instruction": "Isi tempat kosong menggunakan huruf Kana atau huruf rumi",
+      "colour": {
+        "title": "Warna",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Kuning",
+          "q2": "Hijau",
+          "q3": "Biru",
+          "q4": "Merah",
+          "q5": "Hitam",
+          "q6": "Ungu",
+          "q7": "Merah jambu",
+          "q8": "Putih",
+          "q9": "Kelabu"
+        }
+      },
+      "feeling": {
+        "title": "Perasaan",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Gembira",
+          "q2": "Suka",
+          "q3": "Tidak suka",
+          "q4": "Sedap",
+          "q5": "Menarik",
+          "q6": "Baik",
+          "q7": "Risau",
+          "q8": "Sukar"
+        }
+      }
+    },
+    "writingModule2": {
+      "title": "Kata Kerja",
+      "instruction": "Isi tempat kosong menggunakan huruf Kana atau huruf rumi",
+      "verb": {
+        "title": "Kata Kerja",
+        "button": "Semak jawapan",
+        "contents": {
+          "q1": "Belajar",
+          "q2": "Pergi",
+          "q3": "Datang",
+          "q4": "Kembali",
+          "q5": "Bersiar-siar",
+          "q6": "Beli",
+          "q7": "Makan",
+          "q8": "Minum",
+          "q9": "Kerja",
+          "q10": "Melancong",
+          "q11": "Dengar",
+          "q12": "Lihat",
+          "q13": "Tulis",
+          "q14": "Baca",
+          "q15": "Main",
+          "q16": "Hidup"
+        }
+      }
+    },
+    "extraVocab": {
+      "title": "Kosa Kata Tambahan",
+      "instruction": "Legar kursor di atas imej untuk melihat romaji",
+      "market": "Pasar",
+      "food": "Makanan",
+      "colour": "Warna"
+    },
+    "tips": {
+      "chouOn": {
+        "title": "Chou-On",
+        "introduction": "Pemanjangan sebutan vokal bagi /a,i,u,e,o/ atau Chou-on digunakan secara meluas dalam bahasa Jepun. Sebutan akan dipanjangkan satu tempo lebih lama.",
+        "contents": {
+          "obasan": "mak cik",
+          "obaasan": "nenek",
+          "okaasan": "emak",
+          "oniisan": "abang",
+          "senshuu": "minggu lalu",
+          "oneesan": "kakak"
+        },
+        "subTitle": "Huruf vokal"
+      },
+      "youOn": {
+        "title": "You-On",
+        "introduction": "Huruf-huruf /ya, yu, yo/ dituli dengan saiz kecil pada bawah kanan.",
+        "introduction1": "Huruf-huruf You-on perlu ditulis dengan saiz kecil kerana saiz huruf-huruf tersebut boleh mempengaruhi sebutan dan maksud perkataan.",
+        "contents": {
+          "ryuu": "naga",
+          "riyuu": "sebab"
+        }
+      },
+      "sokuOn": {
+        "title": "Soku-On",
+        "introduction": "Pastikan huruf /tsu/ ditulis dengan saiz kecil kerana saiz dan kehaadiran huruf terebut membawa makna yang berbeza kepada perkataan.",
+        "tsu": {
+          "small": "(/tsu/kecil)",
+          "big": "(/tsu/besar)",
+          "none": "(tiada/tsu/)"
+        },
+        "contents": {
+          "hakka": "menyalakan",
+          "hatsuka": "ke-20",
+          "haka": "kubur"
+        }
+      },
+      "hatsuOn": {
+        "title": "Hatsu-On [ん/N]",
+        "m": {
+          "description": "apabila berada di hadapan",
+          "ampan": "jajan Jepun",
+          "shimbun": "surat khabar",
+          "samma": "sejenis ikan"
+        },
+        "ng": {
+          "description": "apabila berada di hadapan",
+          "kongkai": "kali ini",
+          "anggai": "tidak disangka",
+          "ringgo": "epal"
+        },
+        "n": {
+          "description": "apabila berada di hadapan",
+          "anshin": "selamat/lega",
+          "kantan": "mudah",
+          "sensei": "guru"
+        },
+        "ha": {
+          "title": "[は/ha] dan [は/wa]",
+          "description": "untuk mengeja perkataan yang terdapat bunyi 'ha'",
+          "haru": "musim bunga",
+          "hako": "kotak"
+        },
+        "wa": {
+          "description": "sebagai kata pemeri (cth: subjek)",
+          "text": "Hashim ialah seorang pelajar yang baik"
+        },
+        "he": {
+          "title": "[へ/he] dan [へ/e]",
+          "description": "untuk mengeja perkataan yang terdapat bunyi 'he'",
+          "hei": "dinding batu bata"
+        },
+        "e": {
+          "description": "sebagai kata sendi nama (cth: kata kerja)",
+          "text": "Saya pergi ke taman"
+        },
+        "o": {
+          "title": "[お/o] dan [を/o]",
+          "okane": "duit",
+          "onaka": "perut",
+          "description": "untuk mengeja perkataan yang terdapat bunyi 'o'",
+          "description2": "sebagai kata sendi nama (cth: kata kerja)",
+          "text": "saya makan sebiji epal"
+        },
+        "desuMasu": {
+          "title": "[です/desu] dan [ます/masu]",
+          "description": "[です/desu] dan [ます/masu] digunakan pada hujung ayat; tetapi, bunyi 'u' tidak disebut lalu menjadi 'des' dan 'mas'.",
+          "text": "Nama saya Kana. Sekarang, saya tinggal di Malaysia"
+        }
+      }
+    },
+    "greetings": {
+      "partOne": {
+        "title": "Bahagian 1",
+        "ohayo": "Selamat pagi",
+        "konnichiwa": "Selamat tengah hari",
+        "konbanwa": "Selamat petang",
+        "oyasuminasai": "Selamat malam"
+      },
+      "partTwo": {
+        "title": "Bahagian 2",
+        "description": "Saya betul-betul minta maaf",
+        "description1": "(Paling sopan)",
+        "sumimasen": "Minta maaf / Maafkan saya",
+        "gomennasai": "Maaf"
+      },
+      "partThree": {
+        "title": "Bahagian 3",
+        "arigatou": "Terima kasih",
+        "douitashimashite": "Sama-sama",
+        "itadakimasu": "Ucapan sebelum makan",
+        "gochisousamadeshita": "Ucapan selepas makan"
+      },
+      "partFour": {
+        "title": "Bahagian 4",
+        "itterasshai": "Ucapan untuk membalas ujaran ‘ittekimasu’",
+        "ittekimasu": "Ucapan sebelum keluar",
+        "hajimemashite": "Ucapan apabila pertama kali bertemu seseorang",
+        "douzo": "Ucapan setelah selesai pengenalan diri"
+      }
+    },
+    "malaysia": {
+      "title1": "Negeri-negeri",
+      "title2": "Barang/Tempat/Makanan",
+      "desc": "Datanglah ke Malaysia!",
+      "image1": "Gasing yang berputar",
+      "image_desc": "Ditulis menggunakan Hiragana memandangkan Jepun mempunyai permainan yang serupa",
+      "image2": "Dim sum",
+      "image3": "Batik",
+      "image4": "Tarian Tradisional Melayu",
+      "image5": "Pasar malam",
+      "image6": "Dodol",
+      "image7": "Wantan",
+      "image8": "Belacan",
+      "image9": "Nasi Kerabu",
+      "image10": "Ketupat",
+      "image11": "Otak-otak",
+      "image12": "Sate"
+    }
+  },
+  "appMenu": {
+    "language": {
+      "main": "Tukar Baahasa",
+      "english": "English",
+      "malay": "Bahasa Melayu"
+    },
+    "kana": {
+      "main": "Modul-modul Kana",
+      "number": "Nombor",
+      "greeting": "Sapaan",
+      "extra": {
+        "main": "Latihan Tambahan",
+        "submenu1": "Mendengar",
+        "submenu2": "Sebutan",
+        "submenu3": "kosa Kata Tambahan",
+        "nouns": "Kata Nama",
+        "adjectives": "Adjektif",
+        "verbs": "Kata Kerja"
+      },
+      "tips": "Tips"
+    },
+    "management": "Pengurusan",
+    "signIn": "Daftar Masuk",
+    "signUp": "Daftar Akaun",
+    "myAccount": "Akaun Saya"
+  }
 }
