@@ -8,74 +8,63 @@
             <!-- Footer Items -->
             <div class="footer-items">
               <!-- Logo -->
-              <a
-                class="navbar-brand"
-                href="#"
-              >
-                <img
-                  class="logo"
-                  src="assets/img/logo-kana.png"
-                  alt=""
-                >
+              <a class="navbar-brand" href="#">
+                <img class="logo" src="assets/img/logo-kana.png" alt="" />
               </a>
-              <p class="mt-2 mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.
-              </p>
-              <!-- Social Icons -->
-              <div class="social-icons d-flex">
-                <a
-                  class="facebook"
-                  href="#"
-                >
-                  <i class="fab fa-facebook-f" />
-                  <i class="fab fa-facebook-f" />
-                </a>
-                <a
-                  class="twitter"
-                  href="#"
-                >
-                  <i class="fab fa-twitter" />
-                  <i class="fab fa-twitter" />
-                </a>
-                <a
-                  class="google-plus"
-                  href="#"
-                >
-                  <i class="fab fa-google-plus-g" />
-                  <i class="fab fa-google-plus-g" />
-                </a>
-                <a
-                  class="vine"
-                  href="#"
-                >
-                  <i class="fab fa-vine" />
-                  <i class="fab fa-vine" />
-                </a>
-              </div>
+              <p class="mt-2 mb-3">A platform to learn Japanese Orthography</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <!-- Footer Items -->
             <div class="footer-items">
               <!-- Footer Title -->
-              <h3 class="footer-title mb-2">
-                Useful Links
-              </h3>
+              <h3 class="footer-title mb-2">Hiragana</h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">Home</a>
+                  <a href="#">Sei-On</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">About Us</a>
+                  <a href="#">Daku-On</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Services</a>
+                  <a href="#">Handaku-On</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Blog</a>
+                  <a href="#">You-On</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-items">
+              <!-- Footer Title -->
+              <h3 class="footer-title mt-3 mb-2">Katakana</h3>
+              <ul>
+                <li class="py-2">
+                  <a href="#">Sei-On</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Contact</a>
+                  <a href="#">Daku-On</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Handaku-On</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">You-On</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-items mt-3">
+              <ul>
+                <li class="py-2">
+                  <a href="#">{{ this.$t("appMenu.kana.number") }}</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">{{ this.$t("appMenu.kana.greeting") }}</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Katakana (Malaysia)</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">Tips</a>
                 </li>
               </ul>
             </div>
@@ -85,7 +74,36 @@
             <div class="footer-items">
               <!-- Footer Title -->
               <h3 class="footer-title mb-2">
-                Product Help
+                {{ this.$t("appMenu.kana.extra.main") }} ({{
+                  this.$t("appMenu.kana.extra.submenu1.main")
+                }})
+              </h3>
+              <ul>
+                <li class="py-2">
+                  <a href="#"
+                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    1</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a href="#"
+                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    2</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a href="#">{{
+                    this.$t("appMenu.kana.extra.submenu1.sub")
+                  }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-items">
+              <!-- Footer Title -->
+              <h3 class="footer-title mt-3 mb-2">
+                {{ this.$t("appMenu.kana.extra.main") }} ({{
+                  this.$t("appMenu.kana.extra.submenu2")
+                }})
               </h3>
               <ul>
                 <li class="py-2">
@@ -111,23 +129,16 @@
             <div class="footer-items">
               <!-- Footer Title -->
               <h3 class="footer-title mb-2">
-                Download
+                {{ this.$t("appMenu.language.main") }}
               </h3>
-              <!-- Store Buttons -->
-              <div class="button-group store-buttons store-black d-flex flex-wrap">
-                <a href="#">
-                  <img
-                    src="assets/img/google_play_black.png"
-                    alt=""
-                  >
-                </a>
-                <a href="#">
-                  <img
-                    src="assets/img/app_store_black.png"
-                    alt=""
-                  >
-                </a>
-              </div>
+              <ul>
+                <li class="py-2">
+                  <a href="#">{{ this.$t("appMenu.language.english") }}</a>
+                </li>
+                <li class="py-2">
+                  <a href="#">{{ this.$t("appMenu.language.malay") }}</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -139,14 +150,19 @@
         <div class="row">
           <div class="col-12">
             <!-- Copyright Area -->
-            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+            <div
+              class="
+                copyright-area
+                d-flex
+                flex-wrap
+                justify-content-center justify-content-sm-between
+                text-center
+                py-4
+              "
+            >
               <!-- Copyright Left -->
               <div class="copyright-left">
-                &copy; Copyrights 2020 sApp All rights reserved.
-              </div>
-              <!-- Copyright Right -->
-              <div class="copyright-right">
-                Made with <i class="fas fa-heart" /> By <a href="#">Theme Land</a>
+                &copy; {{ year }} KANA - Learn Japanese Orthography
               </div>
             </div>
           </div>
@@ -157,11 +173,12 @@
 </template>
 
 <script>
+import dayjs from 'dayjs'
 export default {
-
+  computed: {
+    year () {
+      return dayjs().year()
+    }
+  }
 }
 </script>
-
-<style>
-
-</style>
