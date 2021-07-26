@@ -34,9 +34,6 @@
               <a href="#features" class="btn sApp-btn text-uppercase scroll">
                 {{ $t("home.buttons.more") }}</a
               >
-              <a href="#" class="btn sApp-btn-primary text-uppercase">{{
-                $t("home.buttons.register")
-              }}</a>
             </div>
           </div>
         </div>
