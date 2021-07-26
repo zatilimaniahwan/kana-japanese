@@ -32,7 +32,7 @@ export default {
     return {
       module: this.$t('learning.moduleTwo.title'),
       menuName: this.$t('appMenu.kana.extra.main'),
-      subMenu: this.$t('appMenu.kana.extra.submenu1')
+      subMenu: this.$t('appMenu.kana.extra.submenu1.main')
     }
   }
 }
