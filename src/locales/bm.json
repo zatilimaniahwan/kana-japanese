@@ -1,125 +1,125 @@
 {
   "home": {
-    "welcome": "Welcome to KANA!",
-    "description": "A platform to learn",
-    "ortography": "Japanese Language",
+    "welcome": "Selamat datang ke KANA!",
+    "description": "Platform pembelajaran untuk",
+    "ortography": "Bahasa Jepun",
     "hiragana": "Hiragana",
     "katakana": "Katakana",
     "buttons": {
-      "more": "More information",
-      "register": "Register now!"
+      "more": "Info Lanjut",
+      "register": "Daftar sekarang!"
     }
   },
   "feature": {
-    "title": "What is KANA?",
+    "title": "Apa itu KANA?",
     "subTitle": {
-      "intro": "Introduction",
-      "module": "Modules in KANA"
+      "intro": "Pengenalan",
+      "module": "Modul-modul KANA"
     },
     "description": "Sistem penulisan bahasa Jepun merupakan antara yang paling unik dan kompleks di dunia. Pada mulanya terdapat tiga jenis ortografi (tulisan) utama iaitu kanji (漢字), hiragana (ひらがな), dan katakana (カタカナ). Namun, setelah banyak pengaruh yang menyisip masuk ke dalam Jepun dari Barat khususnya dari negara Euro Amerika, alfabet Roman atau lebih dikenali sebagai romaji (ローマ字) telah digunakan secara meluas di negara Jepun. Pada hari ini, ortografi moden bahasa Jepun boleh dikategorikan ke dalam empat jenis iaitu hiragana, katakana, kanji dan romaji. Huruf asas di dalam bahasa Jepun iaitu hiragana dan katakana dipanggil “KANA”. Jom kita praktis KANA bersama-sama di dalam modul e-pembelajaran ini!",
     "modules": {
-      "greeting": "Greetings",
-      "number": "Numbers",
-      "exercise": "Exercises",
-      "extra": "Extra Practices"
+      "greeting": "Sapaan",
+      "number": "Nombor",
+      "exercise": "Latihan",
+      "extra": "Latihan Tambahan"
     }
   },
   "work": {
-   "title": "How to start?",
+   "title": "Bagaimana untuk mula?",
    "steps": {
-     "firstStep": "Sign up and pay",
-     "secondStep": "Payment will be verified",
-     "lastStep": "Sign in and start learning"
+     "firstStep": "Daftar akaun baharu dan bayar",
+     "secondStep": "Pembayaran akan disahkan",
+     "lastStep": "Daftar masuk dan mula belajar!"
    }
  },
  "learning": {
    "moduleNum": {
-     "title": "Numbers",
+     "title": "Nombor",
      "contents": {
-       "numbers": "Numbers",
+       "numbers": "Nombor",
        "romaji": "Romaji",
        "kana": "Kana"
      }
    },
    "moduleFirst": {
-     "title": "Practice Unit 1",
-     "instruction": "Please click the button to view the answer",
-     "button": "View answer",
-     "modalInstruction": "Hover on the image to enlarge it"
+     "title": "Latihan Unit 1",
+     "instruction": "Sila tekan butang untuk melihat jawapan",
+     "button": "Lihat jawapan",
+     "modalInstruction": "Legar kursor di atas imej untuk besarkan"
    },
    "moduleTwo": {
-     "title": "Practice Unit 2",
-     "instruction": "Please click the button to view the answer",
-     "button": "View answer",
-     "modalInstruction": "Hover on the image to enlarge it"
+     "title": "Latihan Unit 2",
+     "instruction": "Sila tekan butang untuk melihat jawapan",
+     "button": "Lihat jawapan",
+     "modalInstruction": "Legar kursor di atas imej untuk besarkan"
    },
    "writingModule": {
-     "title": "Writing/ Pronunciation",
-     "instruction": "Please fill in the blanks with Kana letter or alphabet",
+     "title": "Tulisan / Sebutan",
+     "instruction": "Isi tempat kosong menggunakan huruf Kana atau huruf rumi",
      "building": {
-       "title": "Building",
-       "button": "Check answer",
+       "title": "Bangunan",
+       "button": "Semak jawapan",
        "contents": {
          "q1": "Bank",
-         "q2": "Train station",
-         "q3": "Post office",
-         "q4": "Shopping mall",
-         "q5": "School",
-         "q6": "University",
-         "q7": "Library",
-         "q8": "Art gallery",
-         "q9": "Restaurant",
-         "q10": "Supermarket"
+         "q2": "Stesen kereta api",
+         "q3": "Pejabat pos",
+         "q4": "Pusat membeli-belah",
+         "q5": "Sekolah",
+         "q6": "Universiti",
+         "q7": "Perpustakaan",
+         "q8": "Galeri seni",
+         "q9": "Kedai makan",
+         "q10": "Pasar raya"
        }
      },
      "object": {
-       "title": "Things",
-       "button": "Check answer",
+       "title": "Benda",
+       "button": "Semak jawapan",
        "contents": {
-         "q1": "Pencil",
-         "q2": "Cap",
-         "q3": "Handphone",
-         "q4": "Cigarette",
-         "q5": "Note Book",
-         "q6": "Bag",
-         "q7": "T-shirt",
-         "q8": "Textbook",
+         "q1": "Pensel",
+         "q2": "Topi",
+         "q3": "Telefon bimbit",
+         "q4": "Rokok",
+         "q5": "Buku nota",
+         "q6": "Beg",
+         "q7": "Kemeja T",
+         "q8": "Buku teks",
          "q9": "Laptop",
-         "q10": "Socks",
-         "q11": "Spectacles",
-         "q12": "Book shelf",
+         "q10": "Stoking",
+         "q11": "Kaca mata",
+         "q12": "Rak buku",
          "q13": "Piano"
        }
      },
      "fruit": {
-       "title": "Fruits",
-       "button": "Check answer",
+       "title": "Buah-buahan",
+       "button": "Semak jawapan",
        "contents": {
-         "q1": "Mandarin orange",
-         "q2": "Watermelon",
-         "q3": "Orange",
-         "q4": "Peach",
-         "q5": "Strawberry",
-         "q6": "Banana",
-         "q7": "Grape"
+         "q1": "Limau Mandarin",
+         "q2": "Tembikai",
+         "q3": "Oren",
+         "q4": "Pic",
+         "q5": "Strawberi",
+         "q6": "Pisang",
+         "q7": "Anggur"
        }
      },
      "body": {
-       "title": "Body Parts",
-       "button": "Check answer",
+       "title": "Bahagian-bahagian Badan",
+       "button": "Semak jawapan",
        "contents": {
-         "q1": "Eye",
-         "q2": "Cap",
-         "q3": "Handphone",
-         "q4": "Cigarette",
-         "q5": "Note Book",
-         "q6": "Bag",
-         "q7": "T-shirt",
-         "q8": "Textbook",
+         "q1": "Mata",
+         "q2": "Topi",
+         "q3": "Telefon bimbit",
+         "q4": "Rokok",
+         "q5": "Buku nota",
+         "q6": "Beg",
+         "q7": "Kemeja T",
+         "q8": "Buku teks",
          "q9": "Laptop",
-         "q10": "Socks",
-         "q11": "Spectacles",
-         "q12": "Book shelf",
+         "q10": "Stoking",
+         "q11": "Kaca mata",
+         "q12": "Rak buku",
          "q13": "Piano"
        }
      }
