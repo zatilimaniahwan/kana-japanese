@@ -347,17 +347,21 @@
   },
   "appMenu": {
     "language": {
-      "main": "Change Language",
+      "main": "Language",
       "english": "English",
       "malay": "Malay"
     },
     "kana": {
-      "main": "Kana Modules",
+      "main": "Learning",
       "number": "Numbers",
       "greeting": "Greetings",
       "extra":{
         "main": "Extra Practices",
-        "submenu1": "Listening",
+        "submenu1": {
+          "main":  "Listening",
+          "sub": "Listening Exercise (Vocabulary)",
+          "title": "Practice"
+        },
         "submenu2": "Pronounciation",
         "submenu3": "Extra Vocabulary",
         "nouns": "Nouns",
