@@ -57,13 +57,13 @@ export default {
     showModal (val) {
       switch (val) {
       case 'や':
-        this.imgSrc = '/assets/gif/hiraYa-Yo/ma-min.gif'
+        this.imgSrc = '/assets/gif/hiraYa-Yo/ya-min.gif'
         break
       case 'ゆ':
-        this.imgSrc = '/assets/gif/hiraYa-Yo/ma-min.gif'
+        this.imgSrc = '/assets/gif/hiraYa-Yo/yu-min.gif'
         break
       case 'よ':
-        this.imgSrc = '/assets/gif/hiraYa-Yo/ma-min.gif'
+        this.imgSrc = '/assets/gif/hiraYa-Yo/yo-min.gif'
         break
       }
       this.$bvModal.show('modal-syllable-yayo')
