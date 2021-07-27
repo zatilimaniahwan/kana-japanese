@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2 romaji"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+             <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
             <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal :modalId="'modal-syllable-kata-kako'">
+        <div class="syllable" slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'KaKo',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -42,10 +57,31 @@ export default {
           original: 'コ',
           romaji: 'ko'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
+    showModal (val) {
+      switch (val) {
+      case 'カ':
+        this.imgSrc = '/assets/gif/kataKa-Ko/ka-min.gif'
+        break
+      case 'キ':
+        this.imgSrc = '/assets/gif/kataKa-Ko/ki-min.gif'
+        break
+      case 'ク':
+        this.imgSrc = '/assets/gif/kataKa-Ko/ku-min.gif'
+        break
+      case 'ケ':
+        this.imgSrc = '/assets/gif/kataKa-Ko/ke-min.gif'
+        break
+      case 'コ':
+        this.imgSrc = '/assets/gif/kataKa-Ko/ko-min.gif'
+        break
+      }
+      this.$bvModal.show('modal-syllable-kata-kako')
+    },
     play (val) {
       switch (val) {
       case 'カ':
