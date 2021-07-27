@@ -21,7 +21,7 @@
               <h3 class="footer-title mb-2">Hiragana</h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">Sei-On</a>
+                  <a href="/hiragana-sei-on">Sei-On</a>
                 </li>
                 <li class="py-2">
                   <a href="#">Daku-On</a>
@@ -39,7 +39,7 @@
               <h3 class="footer-title mt-3 mb-2">Katakana</h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">Sei-On</a>
+                  <a href="/katakana-sei-on">Sei-On</a>
                 </li>
                 <li class="py-2">
                   <a href="#">Daku-On</a>
@@ -55,16 +55,19 @@
             <div class="footer-items mt-3">
               <ul>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.kana.number") }}</a>
+                  <a href="/number">{{ this.$t("appMenu.kana.number") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.kana.greeting") }}</a>
+                  <a href="/greetings">{{ this.$t("appMenu.kana.greeting") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Katakana (Malaysia)</a>
+                  <a href="/katakana-malaysia">Katakana (Malaysia)</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Tips</a>
+                  <a href="/extravocab">{{ this.$t("appMenu.kana.extra.submenu3" )}}</a>
+                </li>
+                <li class="py-2">
+                  <a href="/tips">Tips</a>
                 </li>
               </ul>
             </div>
@@ -80,13 +83,13 @@
               </h3>
               <ul>
                 <li class="py-2">
-                  <a href="#"
+                  <a href="/unit-one"
                     >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
                     1</a
                   >
                 </li>
                 <li class="py-2">
-                  <a href="#"
+                  <a href="/unit-two"
                     >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
                     2</a
                   >
@@ -107,16 +110,13 @@
               </h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.kana.extra.nouns") }}</a>
+                  <a href="/nouns">{{ this.$t("appMenu.kana.extra.nouns") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.kana.extra.adjectives") }}</a>
+                  <a href="/adjectives">{{ this.$t("appMenu.kana.extra.adjectives") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">Support</a>
-                </li>
-                <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.kana.extra.verbs") }}</a>
+                  <a href="/verbs">{{ this.$t("appMenu.kana.extra.verbs") }}</a>
                 </li>
               </ul>
             </div>
