@@ -18,7 +18,13 @@ new Vue({
   router,
   data () {
     return {
-      appName: 'KANA'
+      appName: 'KANA',
+      currImage: ''
+    }
+  },
+  methods: {
+    viewRomaji (type) {
+      this.currImage = type === 'color' ? '/assets/img/extravocab/colours-romanised.png' : ''
     }
   },
   i18n,

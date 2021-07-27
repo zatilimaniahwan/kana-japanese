@@ -91,7 +91,13 @@ export const SYLLABLES = {
         original: 'け',
         romaji: 'ke',
         imgSrc: '/assets/gif/hiraKa-Ko/ke-min.gif',
-        soundSrc: '/assets/sounds/sei-on/8.mp3'
+        soundSrc: '/assets/sounds/sei-on/9.mp3'
+      },
+      {
+        original: 'こ',
+        romaji: 'ko',
+        imgSrc: '/assets/gif/hiraKa-Ko/ko-min.gif',
+        soundSrc: '/assets/sounds/sei-on/10.mp3'
       }
     ]
   }
