@@ -7,18 +7,33 @@
             <b-card-text>
              <h3 class="syllable">{{ syllable.original }}</h3>
              <h5 class="mt-2 romaji"> {{ syllable.romaji }}</h5>
-             <b-button  class="bg-primary mt-3"><em class="mdi mdi-pencil-outline"></em></b-button>
+             <b-button
+                class="bg-primary mt-3"
+                @click="showModal(syllable.original)"
+                ><em class="mdi mdi-pencil-outline"></em
+              ></b-button>
              <b-button  class="bg-success mt-3 ml-2" @click="play(syllable.original)"><em class="mdi mdi-account-tie-voice"></em></b-button>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
+      <modal class="syllable" :modalId="'modal-syllable-kata-waon'">
+        <div slot="content">
+          <img
+            class="img-fluid"
+            alt="Responsive image"
+            :src="imgSrc"
+            width="100%"
+          />
+        </div>
+      </modal>
     </div>
   </section>
 </template>
 <script>
+import Modal from '../../../../Modal/Modal'
 export default {
-  name: 'WaOn',
+  components: { Modal },
   data () {
     return {
       syllabels: [
@@ -34,10 +49,25 @@ export default {
           original: 'ン',
           romaji: 'N'
         }
-      ]
+      ],
+      imgSrc: ''
     }
   },
   methods: {
+    showModal (val) {
+      switch (val) {
+      case 'ワ':
+        this.imgSrc = '/assets/gif/kataWa-On/wa-min.gif'
+        break
+      case 'ヲ':
+        this.imgSrc = '/assets/gif/kataWa-On/on-min.gif'
+        break
+      case 'ン':
+        this.imgSrc = '/assets/gif/kataWa-On/n-min.gif'
+        break
+      }
+      this.$bvModal.show('modal-syllable-kata-waon')
+    },
     play (val) {
       switch (val) {
       case 'ワ':
