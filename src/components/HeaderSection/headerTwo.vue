@@ -166,10 +166,24 @@
                     2</a
                   >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="/unit-two">{{
-                    this.$t("appMenu.kana.extra.submenu1.sub")
-                  }}</a>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="javascript:;"
+                    >{{ this.$t("appMenu.kana.extra.submenu1.sub") }}</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/hiragana-sei-on"
+                        >Hiragana</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/blog-three-column"
+                        >Katakana</a
+                      >
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
