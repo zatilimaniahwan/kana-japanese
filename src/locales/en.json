@@ -342,6 +342,9 @@
       "image10": "Ketupat",
       "image11": "Otak-otak",
       "image12": "Satay"
+    },
+    "listening": {
+      "instruction": "Please click the audio icon to hear the audio and select the answer from the list"
     }
   },
   "appMenu": {
