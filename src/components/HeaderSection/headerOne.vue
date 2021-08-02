@@ -115,7 +115,7 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="/number">{{
-                    this.$t("appMenu.kana.number")
+                    $t("appMenu.kana.number")
                   }}</a>
                 </li>
                 <li>
@@ -147,8 +147,8 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                {{ this.$t("appMenu.kana.extra.main") }} ({{
-                  this.$t("appMenu.kana.extra.submenu1.main")
+                {{ $t("appMenu.kana.extra.main") }} ({{
+                  $t("appMenu.kana.extra.submenu1.main")
                 }})
               </a>
               <ul
@@ -157,12 +157,12 @@
               >
                 <li>
                   <a class="dropdown-item" href="/unit-one">
-                    {{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit 1</a
+                    {{ $t("appMenu.kana.extra.submenu1.title") }} Unit 1</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item" href="/unit-two"
-                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    >{{ $t("appMenu.kana.extra.submenu1.title") }} Unit
                     2</a
                   >
                 </li>
@@ -170,11 +170,11 @@
                   <a
                     class="dropdown-item dropdown-toggle"
                     href="javascript:;"
-                    >{{ this.$t("appMenu.kana.extra.submenu1.sub") }}</a
+                    >{{ $t("appMenu.kana.extra.submenu1.sub") }}</a
                   >
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="/hiragana-sei-on"
+                      <a class="dropdown-item" href="/listening-hiragana"
                         >Hiragana</a
                       >
                     </li>
@@ -196,8 +196,8 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                {{ this.$t("appMenu.kana.extra.main") }} ({{
-                  this.$t("appMenu.kana.extra.submenu2")
+                {{ $t("appMenu.kana.extra.main") }} ({{
+                  $t("appMenu.kana.extra.submenu2")
                 }})
               </a>
               <ul
@@ -230,7 +230,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                {{ this.$t("appMenu.language.main") }}
+                {{ $t("appMenu.language.main") }}
               </a>
               <ul
                 class="dropdown-menu"
@@ -238,12 +238,12 @@
               >
                 <li>
                   <a class="dropdown-item" href="/hiragana/sei-on">{{
-                    this.$t("appMenu.language.english")
+                    $t("appMenu.language.english")
                   }}</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="/hiragana/sei-on">{{
-                    this.$t("appMenu.language.malay")
+                    $t("appMenu.language.malay")
                   }}</a>
                 </li>
               </ul>
