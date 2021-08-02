@@ -16,6 +16,7 @@ import ExtraVocab from '@/components/Modules/extraPractices/extravocab/Extra'
 import Tips from '@/components/Modules/Tips/Tips'
 import Greeting from '@/components/Modules/Greetings/Greeting'
 import Malaysia from '@/components/Modules/Malaysia/Malaysia'
+import ListeningHiragana from '@/components/Modules/extraPractices/listening/hiragana/hiragana'
 
 Vue.use(Router)
 
@@ -101,6 +102,11 @@ export default new Router({
       path: '/katakana-malaysia',
       name: 'Katakana Malaysia',
       component: Malaysia
+    },
+    {
+      path: '/listening-hiragana',
+      name: 'Listening Hiragan',
+      component: ListeningHiragana
     }
   ]
 })
