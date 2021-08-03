@@ -9,7 +9,7 @@
         </div>
       <b-tabs class="mt-4" content-class="mt-3">
         <b-tab title="A-KO"><AKo /></b-tab>
-        <b-tab title="Sa-To"></b-tab>
+        <b-tab title="Sa-To"><SaTo /></b-tab>
         <b-tab title="Na-Ho"></b-tab>
         <b-tab title="Ma-Yo"></b-tab>
         <b-tab title="Ra-N"></b-tab>
@@ -29,12 +29,14 @@ import HeaderSection from '../../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbThree.vue'
 import FooterSection from '../../../../FooterSection/footerThree'
 import AKo from './parts/aKo'
+import SaTo from './parts/saTo'
 export default {
   components: {
     HeaderSection,
     InnerBreadcrumb,
     FooterSection,
-    AKo
+    AKo,
+    SaTo
   },
   data () {
     return {
