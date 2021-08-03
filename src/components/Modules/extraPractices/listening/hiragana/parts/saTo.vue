@@ -1,94 +1,123 @@
 <template>
   <section class="number-area ptb_30 overflow-hidden">
-    <div class="col-sm-4 col-lg-4">
-      <table class="table table-bordered">
-        <tr v-for="sound in sounds" :key="sound">
-          <td v-if="sound === 'kasa'">
-            <b-form-select
-              :class="isValidQ1"
-              v-model="q1"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ1 === 'is-invalid'">とけい</p>
-          </td>
-          <td v-if="sound === 'sushi'">
-            <b-form-select
-              :class="isValidQ2"
-              v-model="q2"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ2 === 'is-invalid'">くつした</p>
-          </td>
-          <td v-if="sound === 'kisoku'">
-            <b-form-select
-              :class="isValidQ3"
-              v-model="q3"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ3 === 'is-invalid'">せき</p>
-          </td>
-          <td v-if="sound === 'te'">
-            <b-form-select
-              :class="isValidQ4"
-              v-model="q4"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ4 === 'is-invalid'">いち</p>
-          </td>
-          <td v-if="sound === 'ichi'">
-            <b-form-select
-              :class="isValidQ5"
-              v-model="q5"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ5 === 'is-invalid'">て</p>
-          </td>
-          <td v-if="sound === 'seki'">
-            <b-form-select
-              :class="isValidQ6"
-              v-model="q6"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ6 === 'is-invalid'">きそく</p>
-          </td>
-          <td v-if="sound === 'kutsushita'">
-            <b-form-select
-              :class="isValidQ7"
-              v-model="q7"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ7 === 'is-invalid'">すし</p>
-          </td>
-           <td v-if="sound === 'tokei'">
-            <b-form-select
-              :class="isValidQ8"
-              v-model="q8"
-              :options="answers"
-              size="sm"
-            ></b-form-select>
-            <p class="text-danger" v-if="isValidQ8 === 'is-invalid'">けさ</p>
-          </td>
-          <td width="20%">
+    <b-container class="col-sm-8 col-md-8 col-lg-8 ml-0">
+      <b-row>
+        <b-col>
+          <table class="table table-bordered">
+            <tr v-for="sound in sounds" :key="sound">
+              <td v-if="sound === 'kasa'">
+                <b-form-select
+                  :class="isValidQ1"
+                  v-model="q1"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ1 === 'is-invalid'">
+                  とけい
+                </p>
+              </td>
+              <td v-if="sound === 'sushi'">
+                <b-form-select
+                  :class="isValidQ2"
+                  v-model="q2"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ2 === 'is-invalid'">
+                  くつした
+                </p>
+              </td>
+              <td v-if="sound === 'kisoku'">
+                <b-form-select
+                  :class="isValidQ3"
+                  v-model="q3"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ3 === 'is-invalid'">
+                  せき
+                </p>
+              </td>
+              <td v-if="sound === 'te'">
+                <b-form-select
+                  :class="isValidQ4"
+                  v-model="q4"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ4 === 'is-invalid'">
+                  いち
+                </p>
+              </td>
+              <td width="20%">
+                <b-button class="bg-dark" @click="play(sound)"
+                  ><em class="mdi mdi-volume-high"></em
+                ></b-button>
+              </td>
+            </tr>
+          </table>
+        </b-col>
+        <b-col>
+          <table class="table table-bordered">
+            <tr v-for="sound in sounds2" :key="sound">
+              <td v-if="sound === 'ichi'">
+                <b-form-select
+                  :class="isValidQ5"
+                  v-model="q5"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ5 === 'is-invalid'">て</p>
+              </td>
+              <td v-if="sound === 'seki'">
+                <b-form-select
+                  :class="isValidQ6"
+                  v-model="q6"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ6 === 'is-invalid'">
+                  きそく
+                </p>
+              </td>
+              <td v-if="sound === 'kutsushita'">
+                <b-form-select
+                  :class="isValidQ7"
+                  v-model="q7"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ7 === 'is-invalid'">
+                  すし
+                </p>
+              </td>
+              <td v-if="sound === 'tokei'">
+                <b-form-select
+                  :class="isValidQ8"
+                  v-model="q8"
+                  :options="answers"
+                  size="sm"
+                ></b-form-select>
+                <p class="text-danger" v-if="isValidQ8 === 'is-invalid'">
+                  けさ
+                </p>
+              </td>
+              <td width="20%">
             <b-button class="bg-dark" @click="play(sound)"
               ><em class="mdi mdi-volume-high"></em
             ></b-button>
           </td>
-        </tr>
-      </table>
-    </div>
-    <b-button
-      class="bg-primary mt-3"
-      @click="checkAnswer"
-      :disabled="emptyField"
-      >{{ $t("learning.writingModule.building.button") }}</b-button
-    >
+            </tr>
+          </table>
+        </b-col>
+      </b-row>
+      <b-button
+        class="bg-primary mt-3"
+        @click="checkAnswer"
+        :disabled="emptyField"
+        >{{ $t("learning.writingModule.building.button") }}</b-button
+      >
+    </b-container>
   </section>
 </template>
 <script>
@@ -104,7 +133,8 @@ export default {
       q6: null,
       q7: null,
       q8: null,
-      sounds: ['kasa', 'sushi', 'kisoku', 'te', 'ichi', 'seki', 'kutsushita', 'tokei'],
+      sounds: ['kasa', 'sushi', 'kisoku', 'te'],
+      sounds2: ['ichi', 'seki', 'kutsushita', 'tokei'],
       answers: [
         { value: 'kutsushita', text: 'すし' },
         { value: 'te', text: 'いち' },

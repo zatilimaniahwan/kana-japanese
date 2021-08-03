@@ -1,6 +1,6 @@
 <template>
   <section class="number-area ptb_30 overflow-hidden">
-    <b-container>
+    <b-container class="col-sm-8 col-md-8 col-lg-8 ml-0">
       <b-row>
         <b-col>
           <table class="table table-bordered">
