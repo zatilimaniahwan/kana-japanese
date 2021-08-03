@@ -1,7 +1,9 @@
 <template>
   <section class="number-area ptb_30 overflow-hidden">
-    <div class="col-sm-4 col-lg-4">
-      <table class="table table-bordered">
+    <b-container>
+      <b-row>
+        <b-col>
+          <table class="table table-bordered">
         <tr v-for="sound in sounds" :key="sound">
           <td v-if="sound === 'akai'">
             <b-form-select
@@ -39,7 +41,18 @@
             ></b-form-select>
             <p class="text-danger" v-if="isValidQ4 === 'is-invalid'">うえ</p>
           </td>
-          <td v-if="sound === 'ike'">
+          <td width="20%">
+            <b-button class="bg-dark" @click="play(sound)"
+              ><em class="mdi mdi-volume-high"></em
+            ></b-button>
+          </td>
+        </tr>
+      </table>
+        </b-col>
+        <b-col>
+          <table class="table table-bordered">
+        <tr v-for="sound in sounds2" :key="sound">
+                <td v-if="sound === 'ike'">
             <b-form-select
               :class="isValidQ5"
               v-model="q5"
@@ -73,13 +86,15 @@
           </td>
         </tr>
       </table>
-    </div>
-    <b-button
+        </b-col>
+      </b-row>
+          <b-button
       class="bg-primary mt-3"
       @click="checkAnswer"
       :disabled="emptyField"
       >{{ $t("learning.writingModule.building.button") }}</b-button
     >
+    </b-container>
   </section>
 </template>
 <script>
@@ -94,7 +109,8 @@ export default {
       q5: null,
       q6: null,
       q7: null,
-      sounds: ['akai', 'ookii', 'oka', 'ue', 'ike', 'aoi', 'koi'],
+      sounds: ['akai', 'ookii', 'oka', 'ue'],
+      sounds2: ['ike', 'aoi', 'koi'],
       answers: [
         { value: 'ike', text: 'おか' },
         { value: 'ue', text: 'うえ' },
