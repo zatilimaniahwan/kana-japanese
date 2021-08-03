@@ -1,23 +1,75 @@
 <template>
   <section class="number-area ptb_30 overflow-hidden">
-    <div class="col-sm-6 col-lg-6">
+    <div class="col-sm-4 col-lg-4">
       <table class="table table-bordered">
-        <tr v-for="question in questions" :key="question">
-          <td>
+        <tr v-for="sound in sounds" :key="sound">
+          <td v-if="sound === 'akai'">
             <b-form-select
               :class="isValidQ1"
               v-model="q1"
-              :options="romajis"
+              :options="answers"
               size="sm"
             ></b-form-select>
+            <p class="text-danger" v-if="isValidQ1 === 'is-invalid'">こい</p>
           </td>
-          <td>
+          <td v-if="sound === 'ookii'">
             <b-form-select
-              :class="isValidQ1"
-              v-model="q1"
-              :options="romajis"
+              :class="isValidQ2"
+              v-model="q2"
+              :options="answers"
               size="sm"
             ></b-form-select>
+            <p class="text-danger" v-if="isValidQ2 === 'is-invalid'">あおい</p>
+          </td>
+          <td v-if="sound === 'oka'">
+            <b-form-select
+              :class="isValidQ3"
+              v-model="q3"
+              :options="answers"
+              size="sm"
+            ></b-form-select>
+            <p class="text-danger" v-if="isValidQ3 === 'is-invalid'">いけ</p>
+          </td>
+          <td v-if="sound === 'ue'">
+            <b-form-select
+              :class="isValidQ4"
+              v-model="q4"
+              :options="answers"
+              size="sm"
+            ></b-form-select>
+            <p class="text-danger" v-if="isValidQ4 === 'is-invalid'">うえ</p>
+          </td>
+          <td v-if="sound === 'ike'">
+            <b-form-select
+              :class="isValidQ5"
+              v-model="q5"
+              :options="answers"
+              size="sm"
+            ></b-form-select>
+            <p class="text-danger" v-if="isValidQ5 === 'is-invalid'">おか</p>
+          </td>
+          <td v-if="sound === 'aoi'">
+            <b-form-select
+              :class="isValidQ6"
+              v-model="q6"
+              :options="answers"
+              size="sm"
+            ></b-form-select>
+            <p class="text-danger" v-if="isValidQ6 === 'is-invalid'">おおきい</p>
+          </td>
+          <td v-if="sound === 'koi'">
+            <b-form-select
+              :class="isValidQ7"
+              v-model="q7"
+              :options="answers"
+              size="sm"
+            ></b-form-select>
+            <p class="text-danger" v-if="isValidQ7 === 'is-invalid'">あかい</p>
+          </td>
+          <td width="20%">
+            <b-button class="bg-dark" @click="play(sound)"
+              ><em class="mdi mdi-volume-high"></em
+            ></b-button>
           </td>
         </tr>
       </table>
@@ -38,24 +90,27 @@ export default {
       q1: null,
       q2: null,
       q3: null,
-      questions: [
-        this.$t('learning.writingModule.building.contents.q1'),
-        this.$t('learning.writingModule.building.contents.q2'),
-        this.$t('learning.writingModule.building.contents.q3')
-      ],
-      kanas: [
-        { value: 'としょかん', text: 'としょかん' },
-        { value: 'スーパー', text: 'スーパー' },
-        { value: 'えき', text: 'えき' }
-      ],
-      romajis: [
-        { value: 'gakkou', text: 'gakkou' },
-        { value: 'bijyutsukan', text: 'bijyutsukan' },
-        { value: 'resutoran', text: 'resutoran' }
+      q4: null,
+      q5: null,
+      q6: null,
+      q7: null,
+      sounds: ['akai', 'ookii', 'oka', 'ue', 'ike', 'aoi', 'koi'],
+      answers: [
+        { value: 'ike', text: 'おか' },
+        { value: 'ue', text: 'うえ' },
+        { value: 'koi', text: 'あかい' },
+        { value: 'aoi', text: 'おおきい' },
+        { value: 'akai', text: 'こい' },
+        { value: 'ookii', text: 'あおい' },
+        { value: 'oka', text: 'いけ' }
       ],
       isValidQ1: '',
       isValidQ2: '',
-      isValidQ3: ''
+      isValidQ3: '',
+      isValidQ4: '',
+      isValidQ5: '',
+      isValidQ6: '',
+      isValidQ7: ''
     }
   },
   computed: {
@@ -67,25 +122,47 @@ export default {
         this.q4 === null ||
         this.q5 === null ||
         this.q6 === null ||
-        this.q7 === null ||
-        this.q8 === null ||
-        this.q9 === null ||
-        this.q10 === null
+        this.q7 === null
       )
     }
   },
   methods: {
     checkAnswer () {
-      this.isValidQ1 = this.q1 === 'ginkou' ? 'is-valid' : 'is-invalid'
-      this.isValidQ2 = this.q2 === 'えき' ? 'is-valid' : 'is-invalid'
-      this.isValidQ3 = this.q3 === 'ゆうびんきょく' ? 'is-valid' : 'is-invalid'
-      this.isValidQ4 = this.q4 === 'depaato' ? 'is-valid' : 'is-invalid'
-      this.isValidQ5 = this.q5 === 'gakkou' ? 'is-valid' : 'is-invalid'
-      this.isValidQ6 = this.q6 === 'だいがく' ? 'is-valid' : 'is-invalid'
-      this.isValidQ7 = this.q7 === 'としょかん' ? 'is-valid' : 'is-invalid'
-      this.isValidQ8 = this.q8 === 'bijyutsukan' ? 'is-valid' : 'is-invalid'
-      this.isValidQ9 = this.q9 === 'resutoran' ? 'is-valid' : 'is-invalid'
-      this.isValidQ10 = this.q10 === 'suupaa' ? 'is-valid' : 'is-invalid'
+      this.isValidQ1 = this.q1 === 'akai' ? 'is-valid' : 'is-invalid'
+      this.isValidQ2 = this.q2 === 'ookii' ? 'is-valid' : 'is-invalid'
+      this.isValidQ3 = this.q3 === 'oka' ? 'is-valid' : 'is-invalid'
+      this.isValidQ4 = this.q4 === 'ue' ? 'is-valid' : 'is-invalid'
+      this.isValidQ5 = this.q5 === 'ike' ? 'is-valid' : 'is-invalid'
+      this.isValidQ6 = this.q6 === 'aoi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ7 = this.q7 === 'koi' ? 'is-valid' : 'is-invalid'
+    },
+    play (val) {
+      let soundSrc
+      switch (val) {
+      case 'koi':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/01.mp3'
+        break
+      case 'aoi':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/02.mp3'
+        break
+      case 'ike':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/03.mp3'
+        break
+      case 'ue':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/04.mp3'
+        break
+      case 'oka':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/05.mp3'
+        break
+      case 'ookii':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/06.mp3'
+        break
+      case 'akai':
+        soundSrc = '/assets/sounds/hiraganaA-Ko/07.mp3'
+        break
+      }
+      const audio = new Audio(soundSrc)
+      audio.play()
     }
   }
 }
