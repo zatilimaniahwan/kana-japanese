@@ -169,8 +169,8 @@ export default {
       q9: null,
       q10: null,
       q11: null,
-      sounds: ['onaka', 'okane', 'kani', 'ni', 'inu'],
-      sounds2: ['fuutou', 'hei', 'hito', 'tanoshii', 'hana', 'hoshii'],
+      sounds: ['hoshii', 'hana', 'tanoshii', 'hito', 'hei'],
+      sounds2: ['fuutou', 'inu', 'ni', 'kani', 'okane', 'onaka'],
       answers: [
         { value: 'hoshii', text: 'ほしい' },
         { value: 'ni', text: 'に' },
