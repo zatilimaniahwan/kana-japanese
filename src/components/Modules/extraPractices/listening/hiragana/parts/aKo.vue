@@ -144,13 +144,13 @@ export default {
   },
   methods: {
     checkAnswer () {
-      this.isValidQ1 = this.q1 === 'akai' ? 'is-valid' : 'is-invalid'
-      this.isValidQ2 = this.q2 === 'ookii' ? 'is-valid' : 'is-invalid'
-      this.isValidQ3 = this.q3 === 'oka' ? 'is-valid' : 'is-invalid'
+      this.isValidQ1 = this.q1 === 'koi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ2 = this.q2 === 'aoi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ3 = this.q3 === 'ike' ? 'is-valid' : 'is-invalid'
       this.isValidQ4 = this.q4 === 'ue' ? 'is-valid' : 'is-invalid'
-      this.isValidQ5 = this.q5 === 'ike' ? 'is-valid' : 'is-invalid'
-      this.isValidQ6 = this.q6 === 'aoi' ? 'is-valid' : 'is-invalid'
-      this.isValidQ7 = this.q7 === 'koi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ5 = this.q5 === 'oka' ? 'is-valid' : 'is-invalid'
+      this.isValidQ6 = this.q6 === 'ookii' ? 'is-valid' : 'is-invalid'
+      this.isValidQ7 = this.q7 === 'akai' ? 'is-valid' : 'is-invalid'
     },
     play (val) {
       let soundSrc
