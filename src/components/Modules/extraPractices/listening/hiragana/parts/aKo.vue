@@ -112,13 +112,13 @@ export default {
       sounds: ['koi', 'aoi', 'ike', 'ue'],
       sounds2: ['oka', 'ookii', 'akai'],
       answers: [
-        { value: 'ike', text: 'おか' },
+        { value: 'ike', text: 'いけ' },
         { value: 'ue', text: 'うえ' },
-        { value: 'koi', text: 'あかい' },
-        { value: 'aoi', text: 'おおきい' },
-        { value: 'akai', text: 'こい' },
-        { value: 'ookii', text: 'あおい' },
-        { value: 'oka', text: 'いけ' }
+        { value: 'koi', text: 'こい' },
+        { value: 'aoi', text: 'あおい' },
+        { value: 'akai', text: 'あかい' },
+        { value: 'ookii', text: 'おおきい' },
+        { value: 'oka', text: 'おか' }
       ],
       isValidQ1: '',
       isValidQ2: '',
