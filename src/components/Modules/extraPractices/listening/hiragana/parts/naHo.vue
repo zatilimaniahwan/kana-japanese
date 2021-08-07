@@ -5,7 +5,7 @@
         <b-col>
           <table class="table table-bordered">
             <tr v-for="sound in sounds" :key="sound">
-              <td v-if="sound === 'onaka'">
+              <td v-if="sound === 'hoshii'">
                 <b-form-select
                   :class="isValidQ1"
                   v-model="q1"
@@ -16,7 +16,7 @@
                   ほしい
                 </p>
               </td>
-              <td v-if="sound === 'okane'">
+              <td v-if="sound === 'hana'">
                 <b-form-select
                   :class="isValidQ2"
                   v-model="q2"
@@ -27,7 +27,7 @@
                   はな
                 </p>
               </td>
-              <td v-if="sound === 'kani'">
+              <td v-if="sound === 'tanoshii'">
                 <b-form-select
                   :class="isValidQ3"
                   v-model="q3"
@@ -38,7 +38,7 @@
                   たのしい
                 </p>
               </td>
-              <td v-if="sound === 'ni'">
+              <td v-if="sound === 'hito'">
                 <b-form-select
                   :class="isValidQ4"
                   v-model="q4"
@@ -49,7 +49,7 @@
                   ひと
                 </p>
               </td>
-               <td v-if="sound === 'inu'">
+               <td v-if="sound === 'hei'">
                 <b-form-select
                   :class="isValidQ5"
                   v-model="q5"
@@ -80,7 +80,7 @@
                 ></b-form-select>
                 <p class="text-danger" v-if="isValidQ6 === 'is-invalid'">ふうとう</p>
               </td>
-              <td v-if="sound === 'hei'">
+              <td v-if="sound === 'inu'">
                 <b-form-select
                   :class="isValidQ7"
                   v-model="q7"
@@ -91,7 +91,7 @@
                   いぬ
                 </p>
               </td>
-              <td v-if="sound === 'hito'">
+              <td v-if="sound === 'ni'">
                 <b-form-select
                   :class="isValidQ8"
                   v-model="q8"
@@ -102,7 +102,7 @@
                   に
                 </p>
               </td>
-              <td v-if="sound === 'tanoshii'">
+              <td v-if="sound === 'kani'">
                 <b-form-select
                   :class="isValidQ9"
                   v-model="q9"
@@ -113,7 +113,7 @@
                   かに
                 </p>
               </td>
-              <td v-if="sound === 'hana'">
+              <td v-if="sound === 'okane'">
                 <b-form-select
                   :class="isValidQ10"
                   v-model="q10"
@@ -124,7 +124,7 @@
                   おかね
                 </p>
               </td>
-                <td v-if="sound === 'hoshii'">
+                <td v-if="sound === 'onaka'">
                 <b-form-select
                   :class="isValidQ11"
                   v-model="q11"
@@ -172,16 +172,16 @@ export default {
       sounds: ['onaka', 'okane', 'kani', 'ni', 'inu'],
       sounds2: ['fuutou', 'hei', 'hito', 'tanoshii', 'hana', 'hoshii'],
       answers: [
-        { value: 'hoshii', text: 'おなか' },
-        { value: 'ni', text: 'ひと' },
+        { value: 'hoshii', text: 'ほしい' },
+        { value: 'ni', text: 'に' },
         { value: 'fuutou', text: 'ふうとう' },
-        { value: 'onaka', text: 'ほしい' },
-        { value: 'kani', text: 'たのしい' },
-        { value: 'tanoshii', text: 'かに' },
-        { value: 'inu', text: 'へい' },
-        { value: 'hei', text: 'いぬ' },
-        { value: 'hana', text: 'おかね' },
-        { value: 'hito', text: 'に' }
+        { value: 'onaka', text: 'おなか' },
+        { value: 'kani', text: 'かに' },
+        { value: 'tanoshii', text: 'たのしい' },
+        { value: 'inu', text: 'いぬ' },
+        { value: 'hei', text: 'へい' },
+        { value: 'hana', text: 'はな' },
+        { value: 'hito', text: 'ひと' }
       ],
       isValidQ1: '',
       isValidQ2: '',
@@ -215,14 +215,17 @@ export default {
   },
   methods: {
     checkAnswer () {
-      this.isValidQ1 = this.q1 === 'kasa' ? 'is-valid' : 'is-invalid'
-      this.isValidQ2 = this.q2 === 'sushi' ? 'is-valid' : 'is-invalid'
-      this.isValidQ3 = this.q3 === 'kisoku' ? 'is-valid' : 'is-invalid'
-      this.isValidQ4 = this.q4 === 'te' ? 'is-valid' : 'is-invalid'
-      this.isValidQ5 = this.q5 === 'ichi' ? 'is-valid' : 'is-invalid'
-      this.isValidQ6 = this.q6 === 'seki' ? 'is-valid' : 'is-invalid'
-      this.isValidQ7 = this.q7 === 'kutsushita' ? 'is-valid' : 'is-invalid'
-      this.isValidQ8 = this.q8 === 'tokei' ? 'is-valid' : 'is-invalid'
+      this.isValidQ1 = this.q1 === 'hoshii' ? 'is-valid' : 'is-invalid'
+      this.isValidQ2 = this.q2 === 'hana' ? 'is-valid' : 'is-invalid'
+      this.isValidQ3 = this.q3 === 'tanoshii' ? 'is-valid' : 'is-invalid'
+      this.isValidQ4 = this.q4 === 'hito' ? 'is-valid' : 'is-invalid'
+      this.isValidQ5 = this.q5 === 'hei' ? 'is-valid' : 'is-invalid'
+      this.isValidQ6 = this.q6 === 'fuuotou' ? 'is-valid' : 'is-invalid'
+      this.isValidQ7 = this.q7 === 'inu' ? 'is-valid' : 'is-invalid'
+      this.isValidQ8 = this.q8 === 'ni' ? 'is-valid' : 'is-invalid'
+      this.isValidQ9 = this.q9 === 'kani' ? 'is-valid' : 'is-invalid'
+      this.isValidQ10 = this.q10 === 'okane' ? 'is-valid' : 'is-invalid'
+      this.isValidQ11 = this.q11 === 'onaka' ? 'is-valid' : 'is-invalid'
     },
     play (val) {
       let soundSrc
