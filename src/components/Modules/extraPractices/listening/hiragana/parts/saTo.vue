@@ -136,14 +136,14 @@ export default {
       sounds: ['tokei', 'kutsushita', 'seki', 'ichi'],
       sounds2: ['te', 'kisoku', 'sushi', 'kasa'],
       answers: [
-        { value: 'kutsushita', text: 'すし' },
-        { value: 'te', text: 'いち' },
-        { value: 'tokei', text: 'けさ' },
-        { value: 'sushi', text: 'くつした' },
-        { value: 'kasa', text: 'とけい' },
-        { value: 'seki', text: 'きそく' },
-        { value: 'kisoku', text: 'せき' },
-        { value: 'ichi', text: 'て' }
+        { value: 'kutsushita', text: 'くつした' },
+        { value: 'te', text: 'て' },
+        { value: 'tokei', text: 'とけい' },
+        { value: 'sushi', text: 'すし' },
+        { value: 'kasa', text: 'けさ' },
+        { value: 'seki', text: 'せき' },
+        { value: 'kisoku', text: 'きそく' },
+        { value: 'ichi', text: 'いち' }
       ],
       isValidQ1: '',
       isValidQ2: '',
