@@ -5,7 +5,7 @@
         <b-col>
           <table class="table table-bordered">
             <tr v-for="sound in sounds" :key="sound">
-              <td v-if="sound === 'kasa'">
+              <td v-if="sound === 'tokei'">
                 <b-form-select
                   :class="isValidQ1"
                   v-model="q1"
@@ -16,7 +16,7 @@
                   とけい
                 </p>
               </td>
-              <td v-if="sound === 'sushi'">
+              <td v-if="sound === 'kutsushita'">
                 <b-form-select
                   :class="isValidQ2"
                   v-model="q2"
@@ -27,7 +27,7 @@
                   くつした
                 </p>
               </td>
-              <td v-if="sound === 'kisoku'">
+              <td v-if="sound === 'seki'">
                 <b-form-select
                   :class="isValidQ3"
                   v-model="q3"
@@ -38,7 +38,7 @@
                   せき
                 </p>
               </td>
-              <td v-if="sound === 'te'">
+              <td v-if="sound === 'ichi'">
                 <b-form-select
                   :class="isValidQ4"
                   v-model="q4"
@@ -60,7 +60,7 @@
         <b-col>
           <table class="table table-bordered">
             <tr v-for="sound in sounds2" :key="sound">
-              <td v-if="sound === 'ichi'">
+              <td v-if="sound === 'te'">
                 <b-form-select
                   :class="isValidQ5"
                   v-model="q5"
@@ -69,7 +69,7 @@
                 ></b-form-select>
                 <p class="text-danger" v-if="isValidQ5 === 'is-invalid'">て</p>
               </td>
-              <td v-if="sound === 'seki'">
+              <td v-if="sound === 'kisoku'">
                 <b-form-select
                   :class="isValidQ6"
                   v-model="q6"
@@ -80,7 +80,7 @@
                   きそく
                 </p>
               </td>
-              <td v-if="sound === 'kutsushita'">
+              <td v-if="sound === 'sushi'">
                 <b-form-select
                   :class="isValidQ7"
                   v-model="q7"
@@ -91,7 +91,7 @@
                   すし
                 </p>
               </td>
-              <td v-if="sound === 'tokei'">
+              <td v-if="sound === 'kasa'">
                 <b-form-select
                   :class="isValidQ8"
                   v-model="q8"
@@ -133,8 +133,8 @@ export default {
       q6: null,
       q7: null,
       q8: null,
-      sounds: ['kasa', 'sushi', 'kisoku', 'te'],
-      sounds2: ['ichi', 'seki', 'kutsushita', 'tokei'],
+      sounds: ['tokei', 'kutsushita', 'seki', 'ichi'],
+      sounds2: ['te', 'kisoku', 'sushi', 'kasa'],
       answers: [
         { value: 'kutsushita', text: 'すし' },
         { value: 'te', text: 'いち' },
@@ -171,14 +171,14 @@ export default {
   },
   methods: {
     checkAnswer () {
-      this.isValidQ1 = this.q1 === 'kasa' ? 'is-valid' : 'is-invalid'
-      this.isValidQ2 = this.q2 === 'sushi' ? 'is-valid' : 'is-invalid'
-      this.isValidQ3 = this.q3 === 'kisoku' ? 'is-valid' : 'is-invalid'
-      this.isValidQ4 = this.q4 === 'te' ? 'is-valid' : 'is-invalid'
-      this.isValidQ5 = this.q5 === 'ichi' ? 'is-valid' : 'is-invalid'
-      this.isValidQ6 = this.q6 === 'seki' ? 'is-valid' : 'is-invalid'
-      this.isValidQ7 = this.q7 === 'kutsushita' ? 'is-valid' : 'is-invalid'
-      this.isValidQ8 = this.q8 === 'tokei' ? 'is-valid' : 'is-invalid'
+      this.isValidQ1 = this.q1 === 'tokei' ? 'is-valid' : 'is-invalid'
+      this.isValidQ2 = this.q2 === 'kutsushita' ? 'is-valid' : 'is-invalid'
+      this.isValidQ3 = this.q3 === 'seki' ? 'is-valid' : 'is-invalid'
+      this.isValidQ4 = this.q4 === 'ichi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ5 = this.q5 === 'te' ? 'is-valid' : 'is-invalid'
+      this.isValidQ6 = this.q6 === 'kisoku' ? 'is-valid' : 'is-invalid'
+      this.isValidQ7 = this.q7 === 'sushi' ? 'is-valid' : 'is-invalid'
+      this.isValidQ8 = this.q8 === 'kasa' ? 'is-valid' : 'is-invalid'
     },
     play (val) {
       let soundSrc
