@@ -10,7 +10,7 @@
       <b-tabs class="mt-4" content-class="mt-3">
         <b-tab title="A-KO"><AKo /></b-tab>
         <b-tab title="Sa-To"><SaTo /></b-tab>
-        <b-tab title="Na-Ho"></b-tab>
+        <b-tab title="Na-Ho"><NaHo /></b-tab>
         <b-tab title="Ma-Yo"></b-tab>
         <b-tab title="Ra-N"></b-tab>
         <b-tab title="Ga-Zo"></b-tab>
@@ -30,13 +30,15 @@ import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbTh
 import FooterSection from '../../../../FooterSection/footerThree'
 import AKo from './parts/aKo'
 import SaTo from './parts/saTo'
+import NaHo from './parts/naHo.vue'
 export default {
   components: {
     HeaderSection,
     InnerBreadcrumb,
     FooterSection,
     AKo,
-    SaTo
+    SaTo,
+    NaHo
   },
   data () {
     return {
