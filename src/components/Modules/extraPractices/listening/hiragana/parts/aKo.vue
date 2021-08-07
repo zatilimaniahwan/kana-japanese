@@ -5,7 +5,7 @@
         <b-col>
           <table class="table table-bordered">
         <tr v-for="sound in sounds" :key="sound">
-          <td v-if="sound === 'akai'">
+          <td v-if="sound === 'koi'">
             <b-form-select
               :class="isValidQ1"
               v-model="q1"
@@ -14,7 +14,7 @@
             ></b-form-select>
             <p class="text-danger" v-if="isValidQ1 === 'is-invalid'">こい</p>
           </td>
-          <td v-if="sound === 'ookii'">
+          <td v-if="sound === 'aoi'">
             <b-form-select
               :class="isValidQ2"
               v-model="q2"
@@ -23,7 +23,7 @@
             ></b-form-select>
             <p class="text-danger" v-if="isValidQ2 === 'is-invalid'">あおい</p>
           </td>
-          <td v-if="sound === 'oka'">
+          <td v-if="sound === 'ike'">
             <b-form-select
               :class="isValidQ3"
               v-model="q3"
@@ -52,7 +52,7 @@
         <b-col>
           <table class="table table-bordered">
         <tr v-for="sound in sounds2" :key="sound">
-                <td v-if="sound === 'ike'">
+                <td v-if="sound === 'oka'">
             <b-form-select
               :class="isValidQ5"
               v-model="q5"
@@ -61,7 +61,7 @@
             ></b-form-select>
             <p class="text-danger" v-if="isValidQ5 === 'is-invalid'">おか</p>
           </td>
-          <td v-if="sound === 'aoi'">
+          <td v-if="sound === 'ookii'">
             <b-form-select
               :class="isValidQ6"
               v-model="q6"
@@ -70,7 +70,7 @@
             ></b-form-select>
             <p class="text-danger" v-if="isValidQ6 === 'is-invalid'">おおきい</p>
           </td>
-          <td v-if="sound === 'koi'">
+          <td v-if="sound === 'akai'">
             <b-form-select
               :class="isValidQ7"
               v-model="q7"
@@ -109,8 +109,8 @@ export default {
       q5: null,
       q6: null,
       q7: null,
-      sounds: ['akai', 'ookii', 'oka', 'ue'],
-      sounds2: ['ike', 'aoi', 'koi'],
+      sounds: ['koi', 'aoi', 'ike', 'ue'],
+      sounds2: ['oka', 'ookii', 'akai'],
       answers: [
         { value: 'ike', text: 'おか' },
         { value: 'ue', text: 'うえ' },
