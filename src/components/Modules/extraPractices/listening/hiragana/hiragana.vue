@@ -11,7 +11,7 @@
         <b-tab title="A-KO"><AKo /></b-tab>
         <b-tab title="Sa-To"><SaTo /></b-tab>
         <b-tab title="Na-Ho"><NaHo /></b-tab>
-        <b-tab title="Ma-Yo"></b-tab>
+        <b-tab title="Ma-Yo"><MaYo /></b-tab>
         <b-tab title="Ra-N"></b-tab>
         <b-tab title="Ga-Zo"></b-tab>
         <b-tab title="Da-Po"></b-tab>
@@ -30,7 +30,8 @@ import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbTh
 import FooterSection from '../../../../FooterSection/footerThree'
 import AKo from './parts/aKo'
 import SaTo from './parts/saTo'
-import NaHo from './parts/naHo.vue'
+import NaHo from './parts/naHo'
+import MaYo from './parts/maYo'
 export default {
   components: {
     HeaderSection,
@@ -38,7 +39,8 @@ export default {
     FooterSection,
     AKo,
     SaTo,
-    NaHo
+    NaHo,
+    MaYo
   },
   data () {
     return {
