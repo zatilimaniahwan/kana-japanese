@@ -8,7 +8,7 @@
           <p>{{ $t("learning.listening.instruction") }}</p>
         </div>
       <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab title="A-So"></b-tab>
+        <b-tab title="A-So"><ASo /></b-tab>
         <b-tab title="Ta-Ho"></b-tab>
         <b-tab title="Ma-N"></b-tab>
         <b-tab title="Ga-Do"></b-tab>
@@ -27,11 +27,13 @@
 import HeaderSection from '../../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbThree.vue'
 import FooterSection from '../../../../FooterSection/footerThree'
+import ASo from './parts/aSo'
 export default {
   components: {
     HeaderSection,
     InnerBreadcrumb,
-    FooterSection
+    FooterSection,
+    ASo
   },
   data () {
     return {
