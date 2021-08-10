@@ -60,7 +60,7 @@
         <b-col>
           <table class="table table-bordered">
             <tr v-for="sound in sounds2" :key="sound">
-              <td v-if="sound === 'gyuunyu'">
+              <td v-if="sound === 'gyuunyuu'">
                 <b-form-select
                   :class="isValidQ5"
                   v-model="q5"
