@@ -1,0 +1,43 @@
+<template>
+  <div class="overflow-hidden">
+    <div class="main">
+      <HeaderSection />
+       <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"/>
+    <div class="col-sm-12 ol-lg-12">
+            <div class="alert alert-warning mt-3" role="alert">
+          <p>{{ $t("learning.listening.instruction") }}</p>
+        </div>
+      <b-tabs class="mt-4" content-class="mt-3">
+        <b-tab title="A-So"></b-tab>
+        <b-tab title="Ta-Ho"></b-tab>
+        <b-tab title="Ma-N"></b-tab>
+        <b-tab title="Ga-Do"></b-tab>
+        <b-tab title="Ba-Bo"></b-tab>
+        <b-tab title="Pa-Po"></b-tab>
+        <b-tab title="Kya-Ryo"></b-tab>
+        <b-tab title="Tokushu-On"></b-tab>
+      </b-tabs>
+      </div>
+      <FooterSection />
+    </div>
+  </div>
+</template>
+
+<script>
+import HeaderSection from '../../../../HeaderSection/headerTwo'
+import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbThree.vue'
+import FooterSection from '../../../../FooterSection/footerThree'
+export default {
+  components: {
+    HeaderSection,
+    InnerBreadcrumb,
+    FooterSection
+  },
+  data () {
+    return {
+      module: 'Katakana',
+      menuName: this.$t('appMenu.kana.extra.submenu1.sub')
+    }
+  }
+}
+</script>
