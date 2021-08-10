@@ -35,6 +35,9 @@ docker build -t kana-japanese .
  ```
  docker run -it -p 8080:8080 kana-japanese
  ```
+### Enable eslint
+1. Click icon `gear`, choose extension
+2. Search `ESLint` and click install
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
