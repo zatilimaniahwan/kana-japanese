@@ -16,7 +16,7 @@
         <b-tab title="Ga-Zo"><GaZo /></b-tab>
         <b-tab title="Da-Po"><DaPo /></b-tab>
         <b-tab title="Kya-Jo"><KyaJo /></b-tab>
-        <b-tab title="Cha-Ryo"></b-tab>
+        <b-tab title="Cha-Ryo"><ChaRyo /></b-tab>
       </b-tabs>
       </div>
       <FooterSection />
@@ -36,6 +36,7 @@ import RaN from './parts/raN'
 import GaZo from './parts/gaZo'
 import DaPo from './parts/daPo'
 import KyaJo from './parts/kyaJo'
+import ChaRyo from './parts/chaRyo'
 export default {
   components: {
     HeaderSection,
@@ -48,7 +49,8 @@ export default {
     RaN,
     GaZo,
     DaPo,
-    KyaJo
+    KyaJo,
+    ChaRyo
   },
   data () {
     return {
