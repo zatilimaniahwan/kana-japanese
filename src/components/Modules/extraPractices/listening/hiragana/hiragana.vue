@@ -14,7 +14,7 @@
         <b-tab title="Ma-Yo"><MaYo /></b-tab>
         <b-tab title="Ra-N"><RaN /></b-tab>
         <b-tab title="Ga-Zo"><GaZo /></b-tab>
-        <b-tab title="Da-Po"><DaPo />/b-tab>
+        <b-tab title="Da-Po"><DaPo /></b-tab>
         <b-tab title="Kya-Jo"></b-tab>
         <b-tab title="Cha-Ryo"></b-tab>
       </b-tabs>
