@@ -179,7 +179,7 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/blog-three-column"
+                      <a class="dropdown-item" href="/listening-katakana"
                         >Katakana</a
                       >
                     </li>
