@@ -181,7 +181,8 @@ export default {
         { value: 'inu', text: 'いぬ' },
         { value: 'hei', text: 'へい' },
         { value: 'hana', text: 'はな' },
-        { value: 'hito', text: 'ひと' }
+        { value: 'hito', text: 'ひと' },
+        { value: 'okane', text: 'おかね' }
       ],
       isValidQ1: '',
       isValidQ2: '',
