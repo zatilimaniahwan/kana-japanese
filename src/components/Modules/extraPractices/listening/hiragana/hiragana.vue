@@ -13,7 +13,7 @@
         <b-tab title="Na-Ho"><NaHo /></b-tab>
         <b-tab title="Ma-Yo"><MaYo /></b-tab>
         <b-tab title="Ra-N"><RaN /></b-tab>
-        <b-tab title="Ga-Zo"></b-tab>
+        <b-tab title="Ga-Zo"><GaZo /></b-tab>
         <b-tab title="Da-Po"></b-tab>
         <b-tab title="Kya-Jo"></b-tab>
         <b-tab title="Cha-Ryo"></b-tab>
@@ -33,6 +33,7 @@ import SaTo from './parts/saTo'
 import NaHo from './parts/naHo'
 import MaYo from './parts/maYo'
 import RaN from './parts/raN'
+import GaZo from './parts/gaZo'
 export default {
   components: {
     HeaderSection,
@@ -42,7 +43,8 @@ export default {
     SaTo,
     NaHo,
     MaYo,
-    RaN
+    RaN,
+    GaZo
   },
   data () {
     return {
