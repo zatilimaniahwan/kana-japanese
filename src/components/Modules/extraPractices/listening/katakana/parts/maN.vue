@@ -95,23 +95,23 @@
               </td>
               <td v-if="sound === 'rooraasukeeto'">
                 <b-form-select
-                  :class="isValidQ7"
-                  v-model="q7"
+                  :class="isValidQ8"
+                  v-model="q8"
                   :options="answers"
                   size="sm"
                 ></b-form-select>
-                <p class="text-danger" v-if="isValidQ7 === 'is-invalid'">
+                <p class="text-danger" v-if="isValidQ8 === 'is-invalid'">
                   ローラースケート
                 </p>
               </td>
               <td v-if="sound === 'mafuraa'">
                 <b-form-select
-                  :class="isValidQ7"
-                  v-model="q7"
+                  :class="isValidQ9"
+                  v-model="q9"
                   :options="answers"
                   size="sm"
                 ></b-form-select>
-                <p class="text-danger" v-if="isValidQ7 === 'is-invalid'">
+                <p class="text-danger" v-if="isValidQ9 === 'is-invalid'">
                   マフラー
                 </p>
               </td>
@@ -145,6 +145,8 @@ export default {
       q5: null,
       q6: null,
       q7: null,
+      q8: null,
+      q9: null,
       sounds: ['sofutokuriimu', 'raamen', 'ramune', 'hiiru'],
       sounds2: ['toire', 'haamonika', 'hankachi', 'rooraasukeeto', 'mafuraa'],
       answers: [
