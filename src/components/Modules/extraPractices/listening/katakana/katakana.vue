@@ -10,7 +10,7 @@
       <b-tabs class="mt-4" content-class="mt-3">
         <b-tab title="A-So"><ASo /></b-tab>
         <b-tab title="Ta-Ho"><TaHo /></b-tab>
-        <b-tab title="Ma-N"></b-tab>
+        <b-tab title="Ma-N"><MaN /></b-tab>
         <b-tab title="Ga-Do"></b-tab>
         <b-tab title="Ba-Bo"></b-tab>
         <b-tab title="Pa-Po"></b-tab>
@@ -29,13 +29,15 @@ import InnerBreadcrumb from '../../../../InnerPages/InnerBreadcrumb/breadcrumbTh
 import FooterSection from '../../../../FooterSection/footerThree'
 import ASo from './parts/aSo'
 import TaHo from './parts/taHo'
+import MaN from './parts/maN'
 export default {
   components: {
     HeaderSection,
     InnerBreadcrumb,
     FooterSection,
     ASo,
-    TaHo
+    TaHo,
+    MaN
   },
   data () {
     return {
