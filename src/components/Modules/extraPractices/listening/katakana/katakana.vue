@@ -12,7 +12,7 @@
         <b-tab title="Ta-Ho"><TaHo /></b-tab>
         <b-tab title="Ma-N"><MaN /></b-tab>
         <b-tab title="Ga-Do"><GaDo /></b-tab>
-        <b-tab title="Ba-Bo"></b-tab>
+        <b-tab title="Ba-Bo"><BaBo /></b-tab>
         <b-tab title="Pa-Po"></b-tab>
         <b-tab title="Kya-Ryo"></b-tab>
         <b-tab title="Tokushu-On"></b-tab>
@@ -31,6 +31,7 @@ import ASo from './parts/aSo'
 import TaHo from './parts/taHo'
 import MaN from './parts/maN'
 import GaDo from './parts/gaDo'
+import BaBo from './parts/baBo'
 export default {
   components: {
     HeaderSection,
@@ -39,7 +40,8 @@ export default {
     ASo,
     TaHo,
     MaN,
-    GaDo
+    GaDo,
+    BaBo
   },
   data () {
     return {
