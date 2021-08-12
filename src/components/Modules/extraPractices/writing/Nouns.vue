@@ -46,8 +46,7 @@ export default {
   data () {
     return {
       module: this.$t('learning.writingModule.title'),
-      menuName: this.$t('appMenu.kana.extra.main'),
-      subMenu: this.$t('appMenu.kana.extra.submenu2')
+      menuName: this.$t('appMenu.kana.extra.main')
     }
   }
 }
