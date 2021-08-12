@@ -5,7 +5,7 @@
         <b-card-text>
         <p><span class="syllable">[へ/he]</span> {{ $t("learning.tips.hatsuOn.he.description") }}</p>
          <b-row class="mt-2">
-            <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('hei')"><u>へい</u></a></b-col>
+            <b-col cols="2"><a  style="cursor:pointer;" @click="play('hei')"><u class="syllable">へい</u></a></b-col>
             <b-col cols="2"><strong>hei</strong> </b-col>
             <b-col cols="2">
               {{ $t("learning.tips.hatsuOn.he.hei") }}
@@ -17,7 +17,7 @@
         <b-card-text>
         <p><span class="syllable">[へ/e]</span>{{ $t("learning.tips.hatsuOn.e.description") }}</p>
          <b-row class="mt-4">
-            <b-col><a class="syllable" style="cursor:pointer;" @click="play('text')"><u> こうえんへいきます。</u></a></b-col>
+            <b-col><a  style="cursor:pointer;" @click="play('text')"><u class="syllable"> こうえんへいきます。</u></a></b-col>
           </b-row>
          <b-row class="mt-2">
             <b-col><strong>Kouen-e ikimasu.</strong></b-col>

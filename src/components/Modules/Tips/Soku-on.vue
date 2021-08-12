@@ -10,7 +10,11 @@
         <b-card-text>
           <b-row>
             <b-col cols="2">{{ $t("learning.tips.sokuOn.tsu.small") }}</b-col>
-            <b-col cols="2"> <a class="syllable" style="cursor:pointer;" @click="play('hakka')"><u>はっか</u></a> </b-col>
+            <b-col cols="2">
+              <a style="cursor:pointer;" @click="play('hakka')"
+                ><u class="syllable">はっか</u></a
+              >
+            </b-col>
             <b-col cols="2">
               <strong>hakka</strong>
             </b-col>
@@ -20,7 +24,11 @@
           </b-row>
           <b-row>
             <b-col cols="2"> {{ $t("learning.tips.sokuOn.tsu.big") }}</b-col>
-            <b-col cols="2"> <a class="syllable" style="cursor:pointer;" @click="play('hatsuka')"><u>はつか</u></a> </b-col>
+            <b-col cols="2">
+              <a style="cursor:pointer;" @click="play('hatsuka')"
+                ><u class="syllable">はつか</u></a
+              >
+            </b-col>
             <b-col cols="2">
               <strong>hatsuka</strong>
             </b-col>
@@ -28,9 +36,13 @@
               {{ $t("learning.tips.sokuOn.contents.hatsuka") }}
             </b-col>
           </b-row>
-        <b-row>
+          <b-row>
             <b-col cols="2">{{ $t("learning.tips.sokuOn.tsu.none") }} </b-col>
-            <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('haka')"><u> はか</u></a></b-col>
+            <b-col cols="2"
+              ><a style="cursor:pointer;" @click="play('haka')"
+                ><u class="syllable"> はか</u></a
+              ></b-col
+            >
             <b-col cols="2">
               <strong>haka</strong>
             </b-col>

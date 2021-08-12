@@ -86,12 +86,12 @@
           <div class="card text-center text-white bg-success">
             <div v-for="kana1 in kanas1" :key="kana1" class="card-body">
               <div class="card-text">
-                 <a style="cursor:pointer;" @click="play(kana1)"><u>{{kana1 }}</u></a>
+                 <a style="cursor:pointer;" @click="play(kana1)"><u class="syllable">{{kana1 }}</u></a>
               </div>
             </div>
             <div v-for="kana2 in kanas2" :key="kana2" class="card-body">
               <div class="card-text">
-               <a style="cursor:pointer;" @click="play(kana2)"><u>{{kana2 }}</u></a>
+               <a style="cursor:pointer;" @click="play(kana2)"><u class="syllable">{{kana2 }}</u></a>
               </div>
             </div>
             <div class="card-body">
@@ -99,7 +99,7 @@
             </div>
             <div v-for="kana3 in kanas3" :key="kana3" class="card-body">
               <div class="card-text">
-                <a style="cursor:pointer;" @click="play(kana3)"><u>{{kana3 }}</u></a>
+                <a style="cursor:pointer;" @click="play(kana3)"><u class="syllable">{{kana3 }}</u></a>
               </div>
             </div>
           </div>
@@ -168,17 +168,17 @@
           <div class="card text-center text-white bg-success">
             <div v-for="kana4 in kanas4" :key="kana4" class="card-body">
               <div class="card-text">
-                <a style="cursor:pointer;" @click="play(kana4)"><u>{{kana4 }}</u></a>
+                <a style="cursor:pointer;" @click="play(kana4)"><u class="syllable">{{kana4 }}</u></a>
               </div>
             </div>
             <div v-for="kana5 in kanas5" :key="kana5" class="card-body">
               <div class="card-text">
-                <a style="cursor:pointer;" @click="play(kana5)"><u>{{kana5 }}</u></a>
+                <a style="cursor:pointer;" @click="play(kana5)"><u class="syllable">{{kana5 }}</u></a>
               </div>
             </div>
             <div v-for="kana6 in kanas6" :key="kana6" class="card-body">
               <div class="card-text">
-              <a style="cursor:pointer;" @click="play(kana6)"><u>{{kana6 }}</u></a>
+              <a style="cursor:pointer;" @click="play(kana6)"><u class="syllable">{{kana6 }}</u></a>
               </div>
             </div>
           </div>

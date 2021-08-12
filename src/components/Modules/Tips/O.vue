@@ -5,14 +5,14 @@
         <b-card-text>
         <p><span class="syllable">[お/o]</span> {{ $t("learning.tips.hatsuOn.o.description") }}</p>
          <b-row class="mt-2">
-            <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('okane')"><u>おかね</u></a></b-col>
+            <b-col cols="2"><a style="cursor:pointer;" @click="play('okane')"><u class="syllable">おかね</u></a></b-col>
             <b-col cols="2"><strong>okane</strong> </b-col>
             <b-col cols="2">
               {{ $t("learning.tips.hatsuOn.o.okane") }}
             </b-col>
           </b-row>
         <b-row class="mt-2">
-            <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('onaka')"><u>おなか</u></a></b-col>
+            <b-col cols="2"><a  style="cursor:pointer;" @click="play('onaka')"><u class="syllable">おなか</u></a></b-col>
             <b-col cols="2"><strong>onaka</strong> </b-col>
             <b-col cols="2">
               {{ $t("learning.tips.hatsuOn.o.onaka") }}
@@ -24,7 +24,7 @@
         <b-card-text>
         <p><span class="syllable">[を/o]</span>{{ $t("learning.tips.hatsuOn.o.description2") }}</p>
          <b-row class="mt-4">
-            <b-col><a class="syllable" style="cursor:pointer;" @click="play('text')"><u> りんごをたべます</u></a></b-col>
+            <b-col><a style="cursor:pointer;" @click="play('text')"><u class="syllable"> りんごをたべます</u></a></b-col>
           </b-row>
          <b-row class="mt-2">
             <b-col><strong>ringo-o tabemasu</strong></b-col>

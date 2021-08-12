@@ -9,10 +9,14 @@
       <b-card class="mt-3">
         <b-card-text class="text-center">
           <b-row>
-            <b-col cols="2" class="syllable"> き ki + ゃ ya = きゃ kya </b-col>
+            <b-col cols="2"
+              ><p class="syllable">き ki + ゃ ya = きゃ kya</p></b-col
+            >
           </b-row>
           <b-row>
-            <b-col cols="2" class="syllable"> ぎ gi + ゃ ya = ぎゃ gya</b-col>
+            <b-col cols="2">
+              <p class="syllable">ぎ gi + ゃ ya = ぎゃ gya</p></b-col
+            >
           </b-row>
         </b-card-text>
       </b-card>
@@ -22,7 +26,11 @@
           <b-card class="mt-2">
             <b-card-text>
               <b-row>
-                <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('ryuu')"><u> りゅう</u></a></b-col>
+                <b-col cols="2"
+                  ><a style="cursor:pointer;" @click="play('ryuu')"
+                    ><u class="syllable"> りゅう</u></a
+                  ></b-col
+                >
                 <b-col cols="2">
                   <strong>ryuu</strong>
                 </b-col>
@@ -30,8 +38,12 @@
                   {{ $t("learning.tips.youOn.contents.ryuu") }}
                 </b-col>
               </b-row>
-                <b-row>
-                <b-col cols="2"><a class="syllable" style="cursor:pointer;" @click="play('riyuu')"><u>りゆう</u></a> </b-col>
+              <b-row>
+                <b-col cols="2"
+                  ><a style="cursor:pointer;" @click="play('riyuu')"
+                    ><u class="syllable">りゆう</u></a
+                  >
+                </b-col>
                 <b-col cols="2">
                   <strong>riyuu</strong>
                 </b-col>

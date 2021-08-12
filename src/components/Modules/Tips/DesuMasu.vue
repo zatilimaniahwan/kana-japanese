@@ -5,7 +5,7 @@
         <b-card-text>
         <p>{{ $t("learning.tips.hatsuOn.desuMasu.description") }}</p>
          <b-row class="mt-2">
-            <b-col ><a class="syllable" style="cursor:pointer;" @click="play()"><u> わたしはかなです。いま、マレーシアにすんでいます。</u></a></b-col>
+            <b-col ><a  style="cursor:pointer;" @click="play()"><u class="syllable"> わたしはかなです。いま、マレーシアにすんでいます。</u></a></b-col>
           </b-row>
         <b-row class="mt-2">
             <b-col><strong>Watashi-wa Kana-desu. Ima, Mareshia-ni sundeimasu.</strong></b-col>
