@@ -21,7 +21,6 @@ import Section from './section'
 import FooterSection from '../../../FooterSection/footerThree'
 
 export default {
-  name: 'Number',
   components: {
     HeaderSection,
     InnerBreadcrumb,
@@ -31,8 +30,7 @@ export default {
   data () {
     return {
       module: this.$t('learning.moduleTwo.title'),
-      menuName: this.$t('appMenu.kana.extra.main'),
-      subMenu: this.$t('appMenu.kana.extra.submenu1.main')
+      menuName: this.$t('appMenu.kana.extra.main') + ' ' + this.$t('appMenu.kana.extra.submenu1.main')
     }
   }
 }
