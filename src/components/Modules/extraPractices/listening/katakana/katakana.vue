@@ -11,7 +11,7 @@
         <b-tab title="A-So"><ASo /></b-tab>
         <b-tab title="Ta-Ho"><TaHo /></b-tab>
         <b-tab title="Ma-N"><MaN /></b-tab>
-        <b-tab title="Ga-Do"></b-tab>
+        <b-tab title="Ga-Do"><GaDo /></b-tab>
         <b-tab title="Ba-Bo"></b-tab>
         <b-tab title="Pa-Po"></b-tab>
         <b-tab title="Kya-Ryo"></b-tab>
@@ -30,6 +30,7 @@ import FooterSection from '../../../../FooterSection/footerThree'
 import ASo from './parts/aSo'
 import TaHo from './parts/taHo'
 import MaN from './parts/maN'
+import GaDo from './parts/gaDo'
 export default {
   components: {
     HeaderSection,
@@ -37,7 +38,8 @@ export default {
     FooterSection,
     ASo,
     TaHo,
-    MaN
+    MaN,
+    GaDo
   },
   data () {
     return {
