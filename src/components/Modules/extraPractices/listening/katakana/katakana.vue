@@ -15,7 +15,7 @@
         <b-tab title="Ba-Bo"><BaBo /></b-tab>
         <b-tab title="Pa-Po"><PaPo /></b-tab>
         <b-tab title="Kya-Ryo"><KyaRyo /></b-tab>
-        <b-tab title="Tokushu-On"></b-tab>
+        <b-tab title="Tokushu-On"><TakushuOn /></b-tab>
       </b-tabs>
       </div>
       <FooterSection />
@@ -34,6 +34,7 @@ import GaDo from './parts/gaDo'
 import BaBo from './parts/baBo'
 import PaPo from './parts/paPo'
 import KyaRyo from './parts/kyaRyo'
+import TakushuOn from './parts/tokushuOn'
 export default {
   components: {
     HeaderSection,
@@ -45,7 +46,8 @@ export default {
     GaDo,
     BaBo,
     PaPo,
-    KyaRyo
+    KyaRyo,
+    TakushuOn
   },
   data () {
     return {
