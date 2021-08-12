@@ -99,7 +99,6 @@
 </template>
 <script>
 export default {
-  name: 'Building',
   data () {
     return {
       q1: null,
