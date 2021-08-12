@@ -2,12 +2,16 @@
   <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-       <InnerBreadcrumb :title="module" :sub-title="module"/>
-    <div class="col-sm-12 ol-lg-12">
-      <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab :title="$t('learning.malaysia.title1')"><State /></b-tab>
-        <b-tab :title="$t('learning.malaysia.title2')"><PartTwo /></b-tab>
-      </b-tabs>
+      <InnerBreadcrumb
+        :title="module"
+        :sub-title="module"
+        :moduleName="menuName"
+      />
+      <div class="col-sm-12 ol-lg-12">
+        <b-tabs class="mt-4" content-class="mt-3">
+          <b-tab :title="$t('learning.malaysia.title1')"><State /></b-tab>
+          <b-tab :title="$t('learning.malaysia.title2')"><PartTwo /></b-tab>
+        </b-tabs>
       </div>
       <FooterSection />
     </div>
@@ -32,11 +36,11 @@ export default {
   },
   data () {
     return {
-      module: 'Katakana (Malaysia)'
+      module: 'Katakana (Malaysia)',
+      menuName: this.$t('appMenu.kana.main')
     }
   }
 }
 </script>
 
-<style>
-</style>
+<style></style>

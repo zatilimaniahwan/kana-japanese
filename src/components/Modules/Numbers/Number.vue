@@ -2,9 +2,11 @@
     <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
+       <HeaderSection />
       <InnerBreadcrumb
         :title="module"
         :sub-title="module"
+        :moduleName="menuName"
       />
       <NumberSection />
       <FooterSection />
@@ -28,7 +30,8 @@ export default {
   },
   data () {
     return {
-      module: this.$t('learning.moduleNum.title')
+      module: this.$t('learning.moduleNum.title'),
+      menuName: this.$t('appMenu.kana.main')
     }
   }
 }

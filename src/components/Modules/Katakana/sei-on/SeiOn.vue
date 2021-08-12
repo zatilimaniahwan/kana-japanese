@@ -2,7 +2,8 @@
   <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-       <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"/>
+          <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"
+        :moduleName2="subMenu"/>
     <div class="col-sm-12 ol-lg-12">
       <b-tabs class="mt-4" content-class="mt-3">
         <b-tab title="A-O"><AO /></b-tab>
@@ -57,7 +58,8 @@ export default {
   data () {
     return {
       module: 'Sei-On',
-      menuName: 'Katakana'
+      menuName: this.$t('appMenu.kana.main'),
+      subMenu: 'Katakana'
     }
   }
 }

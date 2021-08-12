@@ -2,22 +2,26 @@
   <div>
     <div class="main">
       <HeaderSection />
-         <InnerBreadcrumb :title="module" :sub-title="module"/>
-    <div class="col-sm-12 ol-lg-12">
-      <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab :title="$t('learning.greetings.partOne.title')">
-        <PartOne />
-        </b-tab>
-        <b-tab :title="$t('learning.greetings.partTwo.title')">
-          <PartTwo />
-        </b-tab>
-        <b-tab :title="$t('learning.greetings.partThree.title')">
-          <PartThree />
-        </b-tab>
-        <b-tab :title="$t('learning.greetings.partFour.title')">
-          <PartFour />
-        </b-tab>
-      </b-tabs>
+      <InnerBreadcrumb
+        :title="module"
+        :sub-title="module"
+        :moduleName="menuName"
+      />
+      <div class="col-sm-12 ol-lg-12">
+        <b-tabs class="mt-4" content-class="mt-3">
+          <b-tab :title="$t('learning.greetings.partOne.title')">
+            <PartOne />
+          </b-tab>
+          <b-tab :title="$t('learning.greetings.partTwo.title')">
+            <PartTwo />
+          </b-tab>
+          <b-tab :title="$t('learning.greetings.partThree.title')">
+            <PartThree />
+          </b-tab>
+          <b-tab :title="$t('learning.greetings.partFour.title')">
+            <PartFour />
+          </b-tab>
+        </b-tabs>
       </div>
       <FooterSection />
     </div>
@@ -46,11 +50,9 @@ export default {
   },
   data () {
     return {
-      module: this.$t('appMenu.kana.greeting')
+      module: this.$t('appMenu.kana.greeting'),
+      menuName: this.$t('appMenu.kana.main')
     }
   }
 }
 </script>
-
-<style>
-</style>

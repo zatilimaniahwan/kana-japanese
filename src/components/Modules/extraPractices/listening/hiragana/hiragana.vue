@@ -2,22 +2,26 @@
   <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-       <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"/>
-    <div class="col-sm-12 ol-lg-12">
-            <div class="alert alert-warning mt-3" role="alert">
+      <InnerBreadcrumb
+        :title="module"
+        :sub-title="module"
+        :moduleName="menuName"
+      />
+      <div class="col-sm-12 ol-lg-12">
+        <div class="alert alert-warning mt-3" role="alert">
           <p>{{ $t("learning.listening.instruction") }}</p>
         </div>
-      <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab title="A-KO"><AKo /></b-tab>
-        <b-tab title="Sa-To"><SaTo /></b-tab>
-        <b-tab title="Na-Ho"><NaHo /></b-tab>
-        <b-tab title="Ma-Yo"><MaYo /></b-tab>
-        <b-tab title="Ra-N"><RaN /></b-tab>
-        <b-tab title="Ga-Zo"><GaZo /></b-tab>
-        <b-tab title="Da-Po"><DaPo /></b-tab>
-        <b-tab title="Kya-Jo"><KyaJo /></b-tab>
-        <b-tab title="Cha-Ryo"><ChaRyo /></b-tab>
-      </b-tabs>
+        <b-tabs class="mt-4" content-class="mt-3">
+          <b-tab title="A-KO"><AKo /></b-tab>
+          <b-tab title="Sa-To"><SaTo /></b-tab>
+          <b-tab title="Na-Ho"><NaHo /></b-tab>
+          <b-tab title="Ma-Yo"><MaYo /></b-tab>
+          <b-tab title="Ra-N"><RaN /></b-tab>
+          <b-tab title="Ga-Zo"><GaZo /></b-tab>
+          <b-tab title="Da-Po"><DaPo /></b-tab>
+          <b-tab title="Kya-Jo"><KyaJo /></b-tab>
+          <b-tab title="Cha-Ryo"><ChaRyo /></b-tab>
+        </b-tabs>
       </div>
       <FooterSection />
     </div>

@@ -1,17 +1,25 @@
 <template>
-    <div class="overflow-hidden">
+  <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-       <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"
-        :moduleName2="subMenu"/>
-    <div class="col-sm-12 ol-lg-12">
-      <div class="alert alert-warning mt-3" role="alert">
+      <InnerBreadcrumb
+        :title="module"
+        :sub-title="module"
+        :moduleName="menuName"
+        :moduleName2="subMenu"
+      />
+      <div class="col-sm-12 ol-lg-12">
+        <div class="alert alert-warning mt-3" role="alert">
           <p>{{ $t("learning.writingModule.instruction") }}</p>
         </div>
-      <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab :title="$t('learning.writingModule1.colour.title')"><Colour /></b-tab>
-        <b-tab :title="$t('learning.writingModule1.feeling.title')"><Feeling /></b-tab>
-      </b-tabs>
+        <b-tabs class="mt-4" content-class="mt-3">
+          <b-tab :title="$t('learning.writingModule1.colour.title')"
+            ><Colour
+          /></b-tab>
+          <b-tab :title="$t('learning.writingModule1.feeling.title')"
+            ><Feeling
+          /></b-tab>
+        </b-tabs>
       </div>
       <FooterSection />
     </div>

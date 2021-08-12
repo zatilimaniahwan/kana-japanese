@@ -1,20 +1,34 @@
 <template>
-    <div class="overflow-hidden">
+  <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-      <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"
-        :moduleName2="subMenu"/>
-    <div class="col-sm-12 ol-lg-12">
-      <div class="alert alert-warning mt-3" role="alert">
+      <InnerBreadcrumb
+        :title="module"
+        :sub-title="module"
+        :moduleName="menuName"
+        :moduleName2="subMenu"
+      />
+      <div class="col-sm-12 ol-lg-12">
+        <div class="alert alert-warning mt-3" role="alert">
           <p>{{ $t("learning.writingModule.instruction") }}</p>
         </div>
-      <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab :title="$t('learning.writingModule.building.title')"><Building /></b-tab>
-        <b-tab :title="$t('learning.writingModule.object.title')"><Things /></b-tab>
-        <b-tab :title="$t('learning.writingModule.fruit.title')"><Fruit /></b-tab>
-        <b-tab :title="$t('learning.writingModule.body.title')"><BodyParts /></b-tab>
-        <b-tab :title="$t('learning.writingModule.direction.title')"><Direction /></b-tab>
-      </b-tabs>
+        <b-tabs class="mt-4" content-class="mt-3">
+          <b-tab :title="$t('learning.writingModule.building.title')"
+            ><Building
+          /></b-tab>
+          <b-tab :title="$t('learning.writingModule.object.title')"
+            ><Things
+          /></b-tab>
+          <b-tab :title="$t('learning.writingModule.fruit.title')"
+            ><Fruit
+          /></b-tab>
+          <b-tab :title="$t('learning.writingModule.body.title')"
+            ><BodyParts
+          /></b-tab>
+          <b-tab :title="$t('learning.writingModule.direction.title')"
+            ><Direction
+          /></b-tab>
+        </b-tabs>
       </div>
       <FooterSection />
     </div>
