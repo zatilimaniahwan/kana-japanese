@@ -1,6 +1,6 @@
 <template>
   <section class="number-area ptb_30">
-    <div class="col-sm-12 ol-lg-12">
+    <div class="col-sm-12 col-md-12 col-lg-12">
       <b-card class="mt-3">
         <b-card-text>
           <p>[m]{{ $t("learning.tips.hatsuOn.m.description") }}</p>
