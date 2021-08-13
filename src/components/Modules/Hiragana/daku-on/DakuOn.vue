@@ -5,7 +5,7 @@
        <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"/>
     <div class="col-sm-12 ol-lg-12">
       <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab title="A-O"><AO /></b-tab>
+        <b-tab title="Ga-Go"><AO /></b-tab>
         <b-tab title="Ka-Ko"><KaKo /></b-tab>
         <b-tab title="Sa-So"><SaSo /></b-tab>
         <b-tab title="Ta-To"><TaTo /></b-tab>
