@@ -11,7 +11,7 @@
               <a class="navbar-brand" href="#">
                 <img class="logo" src="assets/img/logo-kana.png" alt="" />
               </a>
-              <p class="mt-2 mb-3">A platform to learn Japanese Orthography</p>
+              <p class="mt-2 mb-3">{{ $t("footer.description") }}</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
@@ -55,16 +55,16 @@
             <div class="footer-items mt-3">
               <ul>
                 <li class="py-2">
-                  <a href="/number">{{ this.$t("appMenu.kana.number") }}</a>
+                  <a href="/number">{{ $t("appMenu.kana.number") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="/greetings">{{ this.$t("appMenu.kana.greeting") }}</a>
+                  <a href="/greetings">{{ $t("appMenu.kana.greeting") }}</a>
                 </li>
                 <li class="py-2">
                   <a href="/katakana-malaysia">Katakana (Malaysia)</a>
                 </li>
                 <li class="py-2">
-                  <a href="/extravocab">{{ this.$t("appMenu.kana.extra.submenu3" )}}</a>
+                  <a href="/extravocab">{{ $t("appMenu.kana.extra.submenu3" )}}</a>
                 </li>
                 <li class="py-2">
                   <a href="/tips">Tips</a>
@@ -77,26 +77,26 @@
             <div class="footer-items">
               <!-- Footer Title -->
               <h3 class="footer-title mb-2">
-                {{ this.$t("appMenu.kana.extra.main") }} ({{
-                  this.$t("appMenu.kana.extra.submenu1.main")
+                {{ $t("appMenu.kana.extra.main") }} ({{
+                  $t("appMenu.kana.extra.submenu1.main")
                 }})
               </h3>
               <ul>
                 <li class="py-2">
                   <a href="/unit-one"
-                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    >{{ $t("appMenu.kana.extra.submenu1.title") }} Unit
                     1</a
                   >
                 </li>
                 <li class="py-2">
                   <a href="/unit-two"
-                    >{{ this.$t("appMenu.kana.extra.submenu1.title") }} Unit
+                    >{{ $t("appMenu.kana.extra.submenu1.title") }} Unit
                     2</a
                   >
                 </li>
                 <li class="py-2">
                   <a href="#">{{
-                    this.$t("appMenu.kana.extra.submenu1.sub")
+                    $t("appMenu.kana.extra.submenu1.sub")
                   }}</a>
                 </li>
               </ul>
@@ -104,19 +104,19 @@
             <div class="footer-items">
               <!-- Footer Title -->
               <h3 class="footer-title mt-3 mb-2">
-                {{ this.$t("appMenu.kana.extra.main") }} ({{
-                  this.$t("appMenu.kana.extra.submenu2")
+                {{ $t("appMenu.kana.extra.main") }} ({{
+                  $t("appMenu.kana.extra.submenu2")
                 }})
               </h3>
               <ul>
                 <li class="py-2">
-                  <a href="/nouns">{{ this.$t("appMenu.kana.extra.nouns") }}</a>
+                  <a href="/nouns">{{ $t("appMenu.kana.extra.nouns") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="/adjectives">{{ this.$t("appMenu.kana.extra.adjectives") }}</a>
+                  <a href="/adjectives">{{ $t("appMenu.kana.extra.adjectives") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="/verbs">{{ this.$t("appMenu.kana.extra.verbs") }}</a>
+                  <a href="/verbs">{{ $t("appMenu.kana.extra.verbs") }}</a>
                 </li>
               </ul>
             </div>
@@ -126,14 +126,14 @@
             <div class="footer-items">
               <!-- Footer Title -->
               <h3 class="footer-title mb-2">
-                {{ this.$t("appMenu.language.main") }}
+                {{ $t("appMenu.language.main") }}
               </h3>
               <ul>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.language.english") }}</a>
+                  <a href="#">{{ $t("appMenu.language.english") }}</a>
                 </li>
                 <li class="py-2">
-                  <a href="#">{{ this.$t("appMenu.language.malay") }}</a>
+                  <a href="#">{{ $t("appMenu.language.malay") }}</a>
                 </li>
               </ul>
             </div>
@@ -159,7 +159,7 @@
             >
               <!-- Copyright Left -->
               <div class="copyright-left">
-                &copy; {{ year }} KANA - Learn Japanese Orthography
+                &copy; {{ year }} KANA - {{ $t("footer.disclaimer") }}
               </div>
             </div>
           </div>

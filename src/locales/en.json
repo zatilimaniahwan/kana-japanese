@@ -23,14 +23,6 @@
        "extra": "Extra Practices"
      }
    },
-   "work": {
-    "title": "How to start?",
-    "steps": {
-      "firstStep": "Sign up and pay",
-      "secondStep": "Payment will be verified",
-      "lastStep": "Sign in and start learning"
-    }
-  },
   "learning": {
     "moduleNum": {
       "title": "Numbers",
@@ -344,7 +336,7 @@
       "image12": "Satay"
     },
     "listening": {
-      "instruction": "Please click the audio icon to hear the audio and select the answer from the list"
+      "instruction": "Please click the audio icon to play the audio and select the answer from the list"
     }
   },
   "appMenu": {
@@ -354,7 +346,7 @@
       "malay": "Malay"
     },
     "kana": {
-      "main": "Learning",
+      "main": "Lessons",
       "number": "Numbers",
       "greeting": "Greetings",
       "extra":{
@@ -376,5 +368,9 @@
     "signIn": "Sign In",
     "signUp": "Sign Up",
     "myAccount": "My Account"
+  },
+  "footer": {
+    "description": "A platform to learn Japanese Orthography",
+    "disclaimer": "Learn Japanese Orthography"
   }
 }

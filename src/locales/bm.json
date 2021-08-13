@@ -23,14 +23,6 @@
       "extra": "Latihan Tambahan"
     }
   },
-  "work": {
-    "title": "Bagaimana untuk mula?",
-    "steps": {
-      "firstStep": "Daftar akaun baharu dan bayar",
-      "secondStep": "Pembayaran akan disahkan",
-      "lastStep": "Daftar masuk dan mula belajar!"
-    }
-  },
   "learning": {
     "moduleNum": {
       "title": "Nombor",
@@ -341,23 +333,30 @@
       "image10": "Ketupat",
       "image11": "Otak-otak",
       "image12": "Sate"
+    },
+    "listening": {
+      "instruction": "Sila klik ikon audio untuk memainkannya dan pilih jawapan daripada senarai"
     }
   },
   "appMenu": {
     "language": {
-      "main": "Tukar Baahasa",
+      "main": "Bahasa",
       "english": "English",
       "malay": "Bahasa Melayu"
     },
     "kana": {
-      "main": "Modul-modul Kana",
+      "main": "Pembelajaran",
       "number": "Nombor",
       "greeting": "Sapaan",
       "extra": {
         "main": "Latihan Tambahan",
-        "submenu1": "Mendengar",
+        "submenu1": {
+          "main":  "Mendengar",
+          "sub": "Latihan Mendengar (Kosa Kata)",
+          "title": "Latihan"
+        },
         "submenu2": "Sebutan",
-        "submenu3": "kosa Kata Tambahan",
+        "submenu3": "Kosa Kata Tambahan",
         "nouns": "Kata Nama",
         "adjectives": "Adjektif",
         "verbs": "Kata Kerja"
@@ -368,5 +367,9 @@
     "signIn": "Daftar Masuk",
     "signUp": "Daftar Akaun",
     "myAccount": "Akaun Saya"
+  },
+  "footer": {
+    "description": "Platform untuk mempelajari Ortografi Jepun",
+    "disclaimer": "Belajar Ortografi Jepun"
   }
 }

@@ -162,8 +162,7 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="/unit-two"
-                    >{{ $t("appMenu.kana.extra.submenu1.title") }} Unit
-                    2</a
+                    >{{ $t("appMenu.kana.extra.submenu1.title") }} Unit 2</a
                   >
                 </li>
                 <li class="dropdown-submenu">
@@ -236,15 +235,12 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li>
-                  <a class="dropdown-item" href="/hiragana/sei-on">{{
-                    $t("appMenu.language.english")
-                  }}</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/hiragana/sei-on">{{
-                    $t("appMenu.language.malay")
-                  }}</a>
+                <li
+                  v-for="locale in locales"
+                  :key="locale"
+                  @click="$root.switchLocale(locale)"
+                >
+                 <a class="dropdown-item" style="cursor:pointer" @click="$root.switchLocale(locale)"> {{ locale }}</a>
                 </li>
               </ul>
             </li>
@@ -254,3 +250,12 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(',')
+    }
+  }
+}
+</script>
