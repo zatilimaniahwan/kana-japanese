@@ -294,6 +294,10 @@ img {
     padding: 180px 0;
 }
 
+.modal-body {
+    padding: 0 !important;
+  }
+
 /*BUTTONS*/
 .btn {
     font-size: 15px;
