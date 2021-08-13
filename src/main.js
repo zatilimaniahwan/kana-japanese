@@ -22,5 +22,12 @@ new Vue({
     }
   },
   i18n,
+  methods: {
+    switchLocale (locale) {
+      if (i18n.locale !== locale) {
+        i18n.locale = locale
+      }
+    }
+  },
   render: (h) => h(App)
 }).$mount('#app')
