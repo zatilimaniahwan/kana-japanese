@@ -88,7 +88,6 @@ export default {
         }
       ],
       imgSrc: '',
-      modalShow: false,
       vocab: [
         {
           hiragana: 'うえ',
