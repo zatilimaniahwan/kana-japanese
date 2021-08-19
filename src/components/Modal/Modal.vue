@@ -1,5 +1,5 @@
 <template>
-  <b-modal :id="modalId" :hide-footer="true" :title="modalTitle">
+  <b-modal :id="modalId" :hide-footer="true" :size="size" :title="modalTitle">
     <slot name="content">{{content}}</slot>
   </b-modal>
 </template>
@@ -9,7 +9,8 @@ export default {
   props: {
     content: String,
     modalId: String,
-    modalTitle: String
+    modalTitle: String,
+    size: String
   }
 }
 </script>
