@@ -11,12 +11,12 @@
             fluid
             alt="Fluid image"
           ></b-img>
-          <div v-for="illustration in vocab" :key="illustration.hiragana">
+          <div v-for="illustration in vocab" :key="illustration.katakana">
             <b-button
               class="btn"
               v-bind:style="illustration.styleButton"
-              @click="play(illustration.hiragana)"
-              ><p class="syllable text-white">{{ illustration.hiragana }}</p></b-button
+              @click="play(illustration.katakana)"
+              ><p class="syllable text-white">{{ illustration.katakana }}</p></b-button
             >
           </div>
         </div>
@@ -132,7 +132,7 @@ export default {
       imgSrc: '',
       vocab: [
         {
-          hiragana: 'ソース',
+          katakana: 'ソース',
           styleButton: {
             position: 'absolute',
             top: '250px',
@@ -140,7 +140,7 @@ export default {
           }
         },
         {
-          hiragana: 'キウイ',
+          katakana: 'キウイ',
           styleButton: {
             position: 'absolute',
             top: '480px',
@@ -148,7 +148,7 @@ export default {
           }
         },
         {
-          hiragana: 'ケーキ',
+          katakana: 'ケーキ',
           styleButton: {
             position: 'absolute',
             top: '320px',
@@ -156,7 +156,7 @@ export default {
           }
         },
         {
-          hiragana: 'めがねケース',
+          katakana: 'めがねケース',
           styleButton: {
             position: 'absolute',
             top: '520px',

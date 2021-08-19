@@ -10,13 +10,13 @@
             fluid
             alt="Fluid image"
           ></b-img>
-        <p v-for="illustration in vocab" :key="illustration.hiragana">
+        <div v-for="illustration in vocab" :key="illustration.hiragana">
           <b-button
             class="btn syllable"
             v-bind:style="illustration.styleButton"
             @click="play(illustration.hiragana)"
-            >{{ illustration.hiragana }}</b-button>
-        </p>
+            ><p class="syllable text-white">{{ illustration.hiragana }}</p></b-button>
+        </div>
         </div>
       </modal>
     </div>
