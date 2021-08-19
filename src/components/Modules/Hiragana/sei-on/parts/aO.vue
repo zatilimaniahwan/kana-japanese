@@ -2,8 +2,7 @@
   <section class="number-area ptb_30">
     <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
       <b-button class="bg-primary" v-b-modal.modal-illustration-ao
-        >Vocabulary Illustration</b-button
-      >
+        >Vocabulary Illustration</b-button >
       <modal :modalId="'modal-illustration-ao'" :size="'xl'">
         <div slot="content">
           <b-img
