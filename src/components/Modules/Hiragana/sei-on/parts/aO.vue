@@ -1,7 +1,15 @@
 <template>
   <section class="number-area ptb_30">
+    <div class= "mt-2 col-12 text-center" >
+        <b-button class="bg-primary" @click="modalShow= !modalShow" >Vocabulary Illustration</b-button>
+         <b-modal v-model="modalShow" size="xl" style="position:relative">
+            <b-img src="/assets/img/hiragana/sei-on/HiraganaA.jpg" fluid alt="Fluid image"></b-img>
+            <p v-for="illustration in vocab" :key="illustration.hiragana">
+              <b-button class="btn syllable" v-bind:style ="illustration.styleButton" @click="play(illustration.hiragana)">{{illustration.hiragana}}</b-button>
+            </p>
+         </b-modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
-      <b-button class="bg-primary mt-3" @click="showModal()"> Vocabulary Illustration </b-button>
       <b-row class="mt-2">
         <b-col class="mt-2" cols="2" v-for="syllable in syllabels" :key="syllable.original">
             <b-card>
@@ -55,7 +63,26 @@ export default {
           romaji: 'o'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      modalShow: false,
+      vocab: [
+        {
+          hiragana: 'うえ',
+          styleButton: {
+            position: 'absolute',
+            top: '80px',
+            left: '160px'
+          }
+        },
+        {
+          hiragana: 'あおい',
+          styleButton: {
+            position: 'absolute',
+            top: '520px',
+            left: '790px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -96,6 +123,12 @@ export default {
         break
       case 'お':
         soundSrc = '/assets/sounds/sei-on/5.mp3'
+        break
+      case 'うえ':
+        soundSrc = '/assets/sounds/illustration-vocab/hiraAo/Hiragana_A_aoi.mp3'
+        break
+      case 'あおい':
+        soundSrc = '/assets/sounds/illustration-vocab/hiraAo/Hiragana_A_ue.mp3'
         break
       }
       const audio = new Audio(soundSrc)
