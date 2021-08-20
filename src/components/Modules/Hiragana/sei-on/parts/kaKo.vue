@@ -1,5 +1,25 @@
 <template>
   <section class="number-area ptb_30">
+    <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
+      <b-button class="bg-primary" v-b-modal.modal-illustration-kaKo
+        >Vocabulary Illustration</b-button >
+      <modal :modalId="'modal-illustration-kaKo'" :size="'xl'">
+        <div slot="content">
+          <b-img
+            src="/assets/img/hiragana/sei-on/HiraganaKa.jpg"
+            fluid
+            alt="Fluid image"
+          ></b-img>
+        <p v-for="illustration in vocab" :key="illustration.hiragana">
+          <b-button
+            class="btn syllable"
+            v-bind:style="illustration.styleButton"
+            @click="play(illustration.hiragana)"
+            >{{ illustration.hiragana }}</b-button>
+        </p>
+        </div>
+      </modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
       <b-row class="mt-2">
         <b-col
@@ -67,7 +87,49 @@ export default {
           romaji: 'ko'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      vocab: [
+        {
+          hiragana: 'こい',
+          styleButton: {
+            position: 'absolute',
+            top: '400px',
+            left: '70px'
+          }
+        },
+        {
+          hiragana: 'おか',
+          styleButton: {
+            position: 'absolute',
+            top: '190px',
+            left: '200px'
+          }
+        },
+        {
+          hiragana: 'おおきい',
+          styleButton: {
+            position: 'absolute',
+            top: '180px',
+            left: '890px'
+          }
+        },
+        {
+          hiragana: 'あかい',
+          styleButton: {
+            position: 'absolute',
+            top: '550px',
+            left: '775px'
+          }
+        },
+        {
+          hiragana: 'いけ',
+          styleButton: {
+            position: 'absolute',
+            top: '450px',
+            left: '365px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -108,6 +170,26 @@ export default {
         break
       case 'こ':
         soundSrc = '/assets/sounds/sei-on/10.mp3'
+        break
+      case 'こい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirakaKo/Hiragana_KA_koi.mp3'
+        break
+      case 'おか':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirakaKo/Hiragana_KA_oka.mp3'
+        break
+      case 'おおきい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirakaKo/Hiragana_KA_ookii.mp3'
+        break
+      case 'あかい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirakaKo/Hiragana_KA_akai.mp3'
+        break
+      case 'いけ':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirakaKo/Hiragana_KA_ike.mp3'
         break
       }
       const audio = new Audio(soundSrc)
