@@ -1,5 +1,25 @@
 <template>
   <section class="number-area ptb_30">
+    <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
+      <b-button class="bg-primary" v-b-modal.modal-illustration-saso
+        >Vocabulary Illustration</b-button >
+      <modal :modalId="'modal-illustration-saso'" :size="'xl'">
+        <div slot="content">
+          <b-img
+            src="/assets/img/hiragana/sei-on/HiraganaSA.jpg"
+            fluid
+            alt="Fluid image"
+          ></b-img>
+        <p v-for="illustration in vocab" :key="illustration.hiragana">
+          <b-button
+            class="btn syllable"
+            v-bind:style="illustration.styleButton"
+            @click="play(illustration.hiragana)"
+            >{{ illustration.hiragana }}</b-button>
+        </p>
+        </div>
+      </modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
       <b-row class="mt-2">
         <b-col class="mt-2" cols="2" v-for="syllable in syllabels" :key="syllable.original">
@@ -58,7 +78,41 @@ export default {
           romaji: 'so'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      vocab: [
+        {
+          hiragana: 'きそく',
+          styleButton: {
+            position: 'absolute',
+            top: '475px',
+            left: '900px'
+          }
+        },
+        {
+          hiragana: 'かさ',
+          styleButton: {
+            position: 'absolute',
+            top: '300px',
+            left: '400px'
+          }
+        },
+        {
+          hiragana: 'すし',
+          styleButton: {
+            position: 'absolute',
+            top: '550px',
+            left: '70px'
+          }
+        },
+        {
+          hiragana: 'せき',
+          styleButton: {
+            position: 'absolute',
+            top: '360px',
+            left: '230px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -99,6 +153,22 @@ export default {
         break
       case 'そ':
         soundSrc = '/assets/sounds/sei-on/15.mp3'
+        break
+      case 'きそく':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirasaSo/Hiragana_SA_kisoku.mp3'
+        break
+      case 'かさ':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirasaSo/Hiragana_SA_kasa.mp3'
+        break
+      case 'すし':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirasaSo/Hiragana_SA_sushi.mp3'
+        break
+      case 'せき':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirasaSo/Hiragana_SA_seki.mp3'
         break
       }
       const audio = new Audio(soundSrc)
