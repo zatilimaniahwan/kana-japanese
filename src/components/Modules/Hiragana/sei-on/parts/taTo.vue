@@ -1,5 +1,25 @@
 <template>
   <section class="number-area ptb_30">
+    <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
+      <b-button class="bg-primary" v-b-modal.modal-illustration-tato
+        >Vocabulary Illustration</b-button >
+      <modal :modalId="'modal-illustration-tato'" :size="'xl'">
+        <div slot="content">
+          <b-img
+            src="/assets/img/hiragana/sei-on/HiraganaTa.jpg"
+            fluid
+            alt="Fluid image"
+          ></b-img>
+        <p v-for="illustration in vocab" :key="illustration.hiragana">
+          <b-button
+            class="btn syllable"
+            v-bind:style="illustration.styleButton"
+            @click="play(illustration.hiragana)"
+            >{{ illustration.hiragana }}</b-button>
+        </p>
+        </div>
+      </modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
       <b-row class="mt-2">
         <b-col class="mt-2" cols="2" v-for="syllable in syllabels" :key="syllable.original">
@@ -58,7 +78,41 @@ export default {
           romaji: 'to'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      vocab: [
+        {
+          hiragana: 'とけい',
+          styleButton: {
+            position: 'absolute',
+            top: '130px',
+            left: '860px'
+          }
+        },
+        {
+          hiragana: 'て',
+          styleButton: {
+            position: 'absolute',
+            top: '390px',
+            left: '240px'
+          }
+        },
+        {
+          hiragana: 'いち',
+          styleButton: {
+            position: 'absolute',
+            top: '60px',
+            left: '695px'
+          }
+        },
+        {
+          hiragana: 'くつした',
+          styleButton: {
+            position: 'absolute',
+            top: '540px',
+            left: '780px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -99,6 +153,23 @@ export default {
         break
       case 'と':
         soundSrc = '/assets/sounds/sei-on/20.mp3'
+        break
+      case 'とけい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirataTo/Hiragana_TA_tokei.mp3'
+        break
+      // eslint-disable-next-line no-duplicate-case
+      case 'て':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirataTo/Hiragana_TA_te.mp3'
+        break
+      case 'いち':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirataTo/Hiragana_TA_ichi.mp3'
+        break
+      case 'くつした':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirataTo/Hiragana_TA_kutsushita.mp3'
         break
       }
       const audio = new Audio(soundSrc)
