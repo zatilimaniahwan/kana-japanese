@@ -60,7 +60,7 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/blog-three-column"
+                      <a class="dropdown-item" href="/hiragana-daku-on"
                         >Daku-On</a
                       >
                     </li>

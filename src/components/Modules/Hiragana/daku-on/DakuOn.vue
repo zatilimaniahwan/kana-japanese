@@ -2,19 +2,14 @@
   <div class="overflow-hidden">
     <div class="main">
       <HeaderSection />
-       <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"/>
+      <InnerBreadcrumb :title="module" :sub-title="module" :moduleName="menuName"
+        :moduleName2="subMenu"/>
     <div class="col-sm-12 ol-lg-12">
       <b-tabs class="mt-4" content-class="mt-3">
-        <b-tab title="Ga-Go"><AO /></b-tab>
-        <b-tab title="Ka-Ko"><KaKo /></b-tab>
-        <b-tab title="Sa-So"><SaSo /></b-tab>
-        <b-tab title="Ta-To"><TaTo /></b-tab>
-        <b-tab title="Na-No"><NaNo /></b-tab>
-        <b-tab title="Ha-Ho"><HaHo /></b-tab>
-        <b-tab title="Ma-Mo"><MaMo /></b-tab>
-        <b-tab title="Ya-Yo"><YaYo /></b-tab>
-        <b-tab title="Ra-Ro"><RaRo /></b-tab>
-        <b-tab title="Wa-O-N"><WaOn /></b-tab>
+        <b-tab title="Ga-Go"><GaGo /></b-tab>
+        <b-tab title="Za-Zo"><ZaZo /></b-tab>
+        <b-tab title="Da-Do"><DaDo /></b-tab>
+        <b-tab title="Ba-Bo"><BaBo /></b-tab>
       </b-tabs>
       </div>
       <FooterSection />
@@ -26,38 +21,27 @@
 import HeaderSection from '../../../HeaderSection/headerTwo'
 import InnerBreadcrumb from '../../../InnerPages/InnerBreadcrumb/breadcrumbThree'
 import FooterSection from '../../../FooterSection/footerThree'
-import AO from './parts/aO'
-import HaHo from './parts/haHo'
-import KaKo from './parts/kaKo'
-import SaSo from './parts/saSo'
-import TaTo from './parts/taTo'
-import NaNo from './parts/naNo'
-import MaMo from './parts/maMo'
-import YaYo from './parts/yaYo'
-import RaRo from './parts/raRo'
-import WaOn from './parts/WaOn'
+import GaGo from './parts/gaGo'
+import ZaZo from './parts/zaZo'
+import DaDo from './parts/daDo'
+import BaBo from './parts/baBo'
 
 export default {
   name: 'Malaysia',
   components: {
     HeaderSection,
     InnerBreadcrumb,
-    AO,
-    HaHo,
-    KaKo,
-    SaSo,
-    TaTo,
-    NaNo,
-    MaMo,
-    YaYo,
-    RaRo,
-    WaOn,
+    GaGo,
+    ZaZo,
+    DaDo,
+    BaBo,
     FooterSection
   },
   data () {
     return {
-      module: 'Sei-On',
-      menuName: 'Hiragana'
+      module: 'Daku-On',
+      menuName: this.$t('appMenu.kana.main'),
+      subMenu: 'Hiragana'
     }
   }
 }
