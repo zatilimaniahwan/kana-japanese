@@ -1,5 +1,25 @@
 <template>
   <section class="number-area ptb_30">
+    <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
+      <b-button class="bg-primary" v-b-modal.modal-illustration-yayo
+        >Vocabulary Illustration</b-button >
+      <modal :modalId="'modal-illustration-yayo'" :size="'xl'">
+        <div slot="content">
+          <b-img
+            src="/assets/img/hiragana/sei-on/HiraganaYa.jpg"
+            fluid
+            alt="Fluid image"
+          ></b-img>
+        <div v-for="illustration in vocab" :key="illustration.hiragana">
+          <b-button
+            class="btn syllable"
+            v-bind:style="illustration.styleButton"
+            @click="play(illustration.hiragana)"
+            ><p class="syllable text-white">{{ illustration.hiragana }}</p></b-button>
+        </div>
+        </div>
+      </modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
       <b-row class="mt-2">
         <b-col class="mt-2" cols="2" v-for="syllable in syllabels" :key="syllable.original">
@@ -50,7 +70,33 @@ export default {
           romaji: 'yo'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      vocab: [
+        {
+          hiragana: 'ようふく',
+          styleButton: {
+            position: 'absolute',
+            top: '540px',
+            left: '225px'
+          }
+        },
+        {
+          hiragana: 'やま',
+          styleButton: {
+            position: 'absolute',
+            top: '50px',
+            left: '770px'
+          }
+        },
+        {
+          hiragana: 'ゆき',
+          styleButton: {
+            position: 'absolute',
+            top: '400px',
+            left: '755px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -79,6 +125,18 @@ export default {
         break
       case 'よ':
         soundSrc = '/assets/sounds/sei-on/38.mp3'
+        break
+      case 'ようふく':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirayaYo/Hiragana_YA_youfuku.mp3'
+        break
+      case 'やま':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirayaYo/Hiragana_YA_yama.mp3'
+        break
+      case 'ゆき':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hirayaYo/Hiragana_YA_yuki.mp3'
         break
       }
       const audio = new Audio(soundSrc)
