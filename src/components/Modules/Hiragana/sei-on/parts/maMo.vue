@@ -1,5 +1,25 @@
 <template>
   <section class="number-area ptb_30">
+    <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
+      <b-button class="bg-primary" v-b-modal.modal-illustration-mamo
+        >Vocabulary Illustration</b-button >
+      <modal :modalId="'modal-illustration-mamo'" :size="'xl'">
+        <div slot="content">
+          <b-img
+            src="/assets/img/hiragana/sei-on/HiraganaMa.jpg"
+            fluid
+            alt="Fluid image"
+          ></b-img>
+        <div v-for="illustration in vocab" :key="illustration.hiragana">
+          <b-button
+            class="btn syllable"
+            v-bind:style="illustration.styleButton"
+            @click="play(illustration.hiragana)"
+            ><p class="syllable text-white">{{ illustration.hiragana }}</p></b-button>
+        </div>
+        </div>
+      </modal>
+    </div>
     <div class="col-sm-12 col-lg-12 text-center">
       <b-row class="mt-2">
         <b-col class="mt-2" cols="2" v-for="syllable in syllabels" :key="syllable.original">
@@ -58,7 +78,49 @@ export default {
           romaji: 'mo'
         }
       ],
-      imgSrc: ''
+      imgSrc: '',
+      vocab: [
+        {
+          hiragana: 'なまえ',
+          styleButton: {
+            position: 'absolute',
+            top: '485px',
+            left: '125px'
+          }
+        },
+        {
+          hiragana: 'おもい',
+          styleButton: {
+            position: 'absolute',
+            top: '155px',
+            left: '80px'
+          }
+        },
+        {
+          hiragana: 'ねむい',
+          styleButton: {
+            position: 'absolute',
+            top: '385px',
+            left: '275px'
+          }
+        },
+        {
+          hiragana: 'め',
+          styleButton: {
+            position: 'absolute',
+            top: '520px',
+            left: '530px'
+          }
+        },
+        {
+          hiragana: 'みみ',
+          styleButton: {
+            position: 'absolute',
+            top: '210px',
+            left: '1000px'
+          }
+        }
+      ]
     }
   },
   methods: {
@@ -99,6 +161,27 @@ export default {
         break
       case 'も':
         soundSrc = '/assets/sounds/sei-on/35.mp3'
+        break
+      case 'なまえ':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hiramaMo/Hiragana_MA_namae.mp3'
+        break
+      case 'おもい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hiramaMo/Hiragana_MA_omoi.mp3'
+        break
+      case 'ねむい':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hiramaMo/Hiragana_MA_nemui.mp3'
+        break
+      // eslint-disable-next-line no-duplicate-case
+      case 'め':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hiramaMo/Hiragana_MA_me.mp3'
+        break
+      case 'みみ':
+        soundSrc =
+            '/assets/sounds/illustration-vocab/hiramaMo/Hiragana_MA_mimi.mp3'
         break
       }
       const audio = new Audio(soundSrc)
