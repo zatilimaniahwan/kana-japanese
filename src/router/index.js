@@ -6,6 +6,7 @@ import SignUp from '@/components/Accounts/SignUp/signup'
 import Forgot from '@/components/Accounts/Forgot/forgot'
 import SeiOnHiragana from '@/components/Modules/Hiragana/sei-on/SeiOn'
 import DakuOnHiragana from '@/components/Modules/Hiragana/daku-on/DakuOn'
+import HandakuOnHiragana from '@/components/Modules/Hiragana/handaku-on/HandakuOn'
 import SeiOnKatakana from '@/components/Modules/Katakana/sei-on/SeiOn'
 import Numbers from '@/components/Modules/Numbers/Number'
 import UnitOne from '@/components/Modules/extraPractices/unit1/unitOne'
@@ -54,6 +55,11 @@ export default new Router({
       path: '/hiragana-daku-on',
       name: 'DakuOn Hiragana',
       component: DakuOnHiragana
+    },
+    {
+      path: '/hiragana-handaku-on',
+      name: 'HandakuOn Hiragana',
+      component: HandakuOnHiragana
     },
     {
       path: '/katakana-sei-on',
