@@ -83,24 +83,24 @@ export default {
           hiragana: 'えんぴつ',
           styleButton: {
             position: 'absolute',
-            top: '500px',
-            left: '340px'
+            top: '490px',
+            left: '60px'
           }
         },
         {
           hiragana: 'さんぽ',
           styleButton: {
             position: 'absolute',
-            top: '560px',
-            left: '190px'
+            top: '250px',
+            left: '230px'
           }
         },
         {
           hiragana: 'しんぱい',
           styleButton: {
             position: 'absolute',
-            top: '390px',
-            left: '120px'
+            top: '280px',
+            left: '920px'
           }
         }
       ]

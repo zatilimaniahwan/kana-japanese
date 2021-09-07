@@ -65,7 +65,7 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/hiragan-handaku-on"
+                      <a class="dropdown-item" href="/hiragana-handaku-on"
                         >Handaku-On</a
                       >
                     </li>
