@@ -1,12 +1,12 @@
 <template>
   <section class="number-area ptb_30">
     <div class="mt-2 col-sm-6 col-md-12 col-lg-12 mb-3">
-      <b-button class="bg-primary" v-b-modal.modal-illustration-babo
+      <b-button class="bg-primary" v-b-modal.modal-illustration-papo
         >Vocabulary Illustration</b-button >
-      <modal :modalId="'modal-illustration-babo'" :size="'xl'">
+      <modal :modalId="'modal-illustration-papo'" :size="'xl'">
         <div slot="content">
           <b-img
-            src="/assets/img/hiragana/daku-on/HiraganaBa.jpg"
+            src="/assets/img/hiragana/daku-on/HiraganaPa.jpg"
             fluid
             alt="Fluid image"
           ></b-img>
@@ -57,66 +57,50 @@ export default {
     return {
       syllabels: [
         {
-          original: 'ば',
-          romaji: 'ba'
+          original: 'ぱ',
+          romaji: 'pa'
         },
         {
-          original: 'び',
-          romaji: 'bi'
+          original: 'ぴ ',
+          romaji: 'pi'
         },
         {
-          original: 'ぶ',
-          romaji: 'bu'
+          original: ' ぷ',
+          romaji: 'pu'
         },
         {
-          original: 'べ',
-          romaji: 'be'
+          original: 'ぺ',
+          romaji: 'pe'
         },
         {
-          original: 'ぼ',
-          romaji: 'bo'
+          original: 'ぽ',
+          romaji: 'po'
         }
       ],
       imgSrc: '',
       vocab: [
         {
-          hiragana: 'かばん',
+          hiragana: 'えんぴつ',
           styleButton: {
             position: 'absolute',
-            top: '500px',
-            left: '340px'
+            top: '490px',
+            left: '60px'
           }
         },
         {
-          hiragana: 'くちべに',
+          hiragana: 'さんぽ',
           styleButton: {
             position: 'absolute',
-            top: '560px',
-            left: '190px'
+            top: '250px',
+            left: '230px'
           }
         },
         {
-          hiragana: 'かびん',
+          hiragana: 'しんぱい',
           styleButton: {
             position: 'absolute',
-            top: '390px',
-            left: '120px'
-          }
-        },
-        {
-          hiragana: 'ぼうし',
-          styleButton: {
-            position: 'absolute',
-            top: '90px',
-            left: '50px'
-          }
-        },
-        {
-          hiragana: 'あぶない',
-          styleButton: {
-            position: 'absolute',
-            top: '560px',
-            left: '800px'
+            top: '280px',
+            left: '920px'
           }
         }
       ]
@@ -126,20 +110,14 @@ export default {
     play (val) {
       let soundSrc
       switch (val) {
-      case 'かばん':
-        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_kaban.mp3'
+      case 'えんぴつ':
+        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_enpitsu.mp3'
         break
-      case 'くちべに':
-        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_kuchibeni.mp3'
+      case 'さんぽ':
+        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_sanpo.mp3'
         break
-      case 'かびん':
-        soundSrc = ''
-        break
-      case 'ぼうし':
-        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_boushi.mp3'
-        break
-      case 'あぶない':
-        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_abunai.mp3'
+      case 'しんぱい':
+        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_shinpai.mp3'
         break
       }
       const audio = new Audio(soundSrc)
