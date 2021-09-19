@@ -133,7 +133,7 @@ export default {
         soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_kuchibeni.mp3'
         break
       case 'かびん':
-        soundSrc = ''
+        soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_yubi.mp3'
         break
       case 'ぼうし':
         soundSrc = '/assets/sounds/illustration-vocab/hirabaPa/Hiragana_BA-PA_boushi.mp3'
