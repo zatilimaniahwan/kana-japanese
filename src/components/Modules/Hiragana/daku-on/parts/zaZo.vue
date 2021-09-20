@@ -6,7 +6,7 @@
       <modal :modalId="'modal-illustration-zazo'" :size="'xl'">
         <div slot="content">
           <b-img
-            src="/assets/img/hiragana/daku-on/HiraganaZa.jpg"
+            src="/assets/img/hiragana/daku-on/HiraganaZA.jpg"
             fluid
             alt="Fluid image"
           ></b-img>

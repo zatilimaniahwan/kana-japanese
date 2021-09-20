@@ -6,7 +6,7 @@
       <modal :modalId="'modal-illustration-babo'" :size="'xl'">
         <div slot="content">
           <b-img
-            src="/assets/img/hiragana/daku-on/HiraganaBa.jpg"
+            src="/assets/img/hiragana/daku-on/HiraganaBA.jpg"
             fluid
             alt="Fluid image"
           ></b-img>

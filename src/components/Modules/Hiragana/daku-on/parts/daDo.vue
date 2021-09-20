@@ -6,7 +6,7 @@
       <modal :modalId="'modal-illustration-dado'" :size="'xl'">
         <div slot="content">
           <b-img
-            src="/assets/img/hiragana/daku-on/HiraganaDa.jpg"
+            src="/assets/img/hiragana/daku-on/HiraganaDA.jpg"
             fluid
             alt="Fluid image"
           ></b-img>
